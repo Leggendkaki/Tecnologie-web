@@ -6,7 +6,7 @@ img, object, embed, video {
 
 /* IE 6 does not support max-width so default to width 100% */
 .ie6 img {
-	width:100%;
+	width: 100%;
 }
 
 #header_container {
@@ -19,14 +19,33 @@ img, object, embed, video {
 }
 
 .navbar {
-	float:left;
+	float: left;
 	clear: both;
 }
 
+.navbar ul {
+	list-style-type: none;
+	-webkit-padding-start: 0;	/*no starting padding left*/
+}
+
+.navbar li {
+	float: left;
+	border: 1px black solid;
+	padding: 12px 14px;
+}
+
+.navbar a {
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	text-decoration: underline;
+}
+
 .breadcrumb {
-	float:left;
+	float: left;
 }
 
 hr {
-	clear:both;
+	clear: both;
 }
