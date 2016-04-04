@@ -18,6 +18,9 @@ img, object, embed, video {
 	float: left;
 }
 
+.navbar_button{
+	float: right;
+}
 .navbar {
 	float: left;
 	clear: both;
@@ -43,6 +46,7 @@ img, object, embed, video {
 }
 
 .breadcrumb {
+	clear: both;
 	float: left;
 }
 
