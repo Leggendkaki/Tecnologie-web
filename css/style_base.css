@@ -9,7 +9,24 @@ img, object, embed, video {
 	width:100%;
 }
 
-#hcontainer {
+#header_container {
 	margin: 0 auto;
 	width:100%;
 }
+
+.banner {
+	float: left;
+}
+
+.navbar {
+	float:left;
+	clear: both;
+}
+
+.breadcrumb {
+	float:left;
+}
+/*
+hr {
+	clear:both;
+}*/
