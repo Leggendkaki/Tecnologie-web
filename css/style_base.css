@@ -47,7 +47,6 @@ h3 {
 	clear: both;
 }
 
-
 .banner {
 	max-width: 180px;
 	margin-left:15px;
@@ -197,6 +196,7 @@ h3 {
 .navbar_button {
 	display: none;
 }
+
 .navbar {
 	display: inline;
 	float: left;
