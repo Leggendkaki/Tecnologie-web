@@ -134,8 +134,10 @@ h3 {
 	font-size: 1.375em;
 	line-height: 1.13636364em;
 }
- 
+
 }
+
+
 @media only screen and (min-width: 769px) {
 body {
 	line-height:1.375em;
@@ -152,4 +154,9 @@ h3 {
 	font-size: 1.75em;
 	line-height: 1.25em;
 }
+
+.navbar_button {
+	display: none;
+}
+
 }
