@@ -20,3 +20,7 @@ Interitus: 255/130/72, 193/114/52
 Initio: 121/174/167
 Enlightened: 2/191/2
 Resistance: 4/146/208
+
+//Font
+https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/
+http://typecast.com/blog/a-more-modern-scale-for-web-typography
