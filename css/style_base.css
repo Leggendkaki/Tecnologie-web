@@ -73,9 +73,11 @@ h3 {
 	display: block;
 	float: left;
 	height: 300px;
-	margin: 1rem;
+	margin: 10px;
 	position: relative;
 	width: 250px;
+	padding: 10px;
+	text-align: justify;
 }
 
 .card-1 {
