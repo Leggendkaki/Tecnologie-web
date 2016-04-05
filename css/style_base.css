@@ -58,7 +58,6 @@ h3 {
 	float: right;
 	margin-right:20px;
 	margin-top: 17px;
-	
 }
 
 .navbar {
@@ -139,7 +138,7 @@ h3 {
 }
 
 @media only screen and (min-width: 481px) {
-	body {
+body {
 	line-height:1.375em;
 }
 h1 {
@@ -155,13 +154,20 @@ h3 {
 	line-height: 1.13636364em;
 }
 
-.content_container {
-	width:95%;
+.banner{
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+#content_container {
+	width:100%;
+	background: blue;
 }
 
 .card {
-	float:left;
-	width:80%;
+	float: left;
+	width: 30%;
+	margin: 10px;
 }
 
 .img_card {
@@ -191,8 +197,29 @@ h3 {
 .navbar_button {
 	display: none;
 }
+.navbar {
+	display: inline;
+	float: left;
+	margin: 0 auto;
+	width: 100%;
+}
 
-.content_container {
+.navbar ul {
+	list-style-type: none;
+	padding: 0;	/*no starting padding left*/
+}
+
+.navbar li {
+	display:inline;
+	text-align: center;
+	padding: 12px 14px;
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.2s ease-in-out;
+}
+
+#content_container {
 	max-width:1232px;
 }
 }
