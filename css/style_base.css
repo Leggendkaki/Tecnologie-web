@@ -43,9 +43,6 @@ h3 {
 	clear: both;
 }
 
-#footer_container p{
-	float: left;
-}
 
 .banner {
 	float: left;
@@ -90,8 +87,6 @@ h3 {
 	float: left;
 }
 
-/*START TEST CARD*/
-
 .card {
 	background: #fff;
 	border-radius: 2px;
@@ -117,7 +112,9 @@ h3 {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-/*END TEST CARD*/
+.validation {
+	float: left;
+}
 
 @media only screen and (min-width: 481px) {
 	body {
