@@ -12,6 +12,7 @@ img, object, embed, video {
 body {
 	font-size: 16px;
 	line-height: 1.25em;
+	background: #fdfdff;
 }
 h1{
 	font-size:2em;
