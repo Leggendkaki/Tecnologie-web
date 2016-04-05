@@ -43,6 +43,10 @@ h3 {
 	clear: both;
 }
 
+#footer_container p{
+	float: left;
+}
+
 .banner {
 	float: left;
 }
