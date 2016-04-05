@@ -9,6 +9,37 @@ img, object, embed, video {
 	width: 100%;
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+
+
+
 body {
 	font-size: 16px;
 	line-height: 1.25em;
@@ -32,7 +63,8 @@ h3 {
 	background-color: #b3ffb3;
 	margin: 0 auto;
 	width:100%;
-
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #content_container {
@@ -51,12 +83,21 @@ h3 {
 	max-width: 180px;
 	margin-left:15px;
 	float: left;
+
 }
+#logo {
+	margin-top: 20px;
+}
+
 
 .navbar_button{
 	float: right;
 	margin-right:20px;
 	margin-top: 17px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 }
 
 .navbar {
