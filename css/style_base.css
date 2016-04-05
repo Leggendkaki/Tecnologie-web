@@ -70,7 +70,6 @@ h3 {
 .card {
 	background: #fff;
 	border-radius: 2px;
-	display: block;
 	float: left;
 	height: 300px;
 	margin: 10px;
@@ -92,9 +91,6 @@ h3 {
 /*END TEST CARD*/
 
 
-hr {
-	clear: both;
-}
 
 @media only screen and (min-width: 481px) {
 	body {
