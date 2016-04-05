@@ -28,7 +28,7 @@ img, object, embed, video {
 
 .navbar ul {
 	list-style-type: none;
-	-webkit-padding-start: 0;	/*no starting padding left*/
+	padding: 0;	/*no starting padding left*/
 }
 
 .navbar li {
@@ -52,4 +52,9 @@ img, object, embed, video {
 
 hr {
 	clear: both;
+}
+
+@media only screen and (min-width: 481px) {
+}
+@media only screen and (min-width: 769px) {
 }
