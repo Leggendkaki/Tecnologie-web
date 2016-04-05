@@ -95,9 +95,11 @@ h3 {
 	margin-bottom: 10px;
 	position: relative;
 	width: 90%;
-	padding: 10px;
+	padding: px;
 	text-align: justify;
+//	overflow:hidden;
 }
+
 
 .card img {
 	max-width: 100%; 
