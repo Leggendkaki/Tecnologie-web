@@ -88,6 +88,17 @@ h3 {
 	float: left;
 }
 
+.breadcrumb ol {
+	list-style-type: none;
+	padding: 0;	/*no starting padding left*/
+}
+
+.breadcrumb li {
+	float: left;
+	padding: 4px;
+
+}
+
 .card {
 	background: #fff;
 	border-radius: 2px;
