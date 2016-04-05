@@ -13,6 +13,7 @@ body {
 	font-size: 16px;
 	line-height: 1.25em;
 	background: #fdfdff;
+	margin:0;
 }
 h1{
 	font-size:2em;
@@ -27,9 +28,11 @@ h3 {
 }
 
 #header_container {
+	float:left;
+	background-color: #b3ffb3;
 	margin: 0 auto;
 	width:100%;
-	clear: both;
+
 }
 
 #content_container {
@@ -46,11 +49,16 @@ h3 {
 
 
 .banner {
+	max-width: 180px;
+	margin-left:15px;
 	float: left;
 }
 
 .navbar_button{
 	float: right;
+	margin-right:20px;
+	margin-top: 17px;
+	
 }
 
 .navbar {
