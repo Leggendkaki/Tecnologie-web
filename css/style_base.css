@@ -195,6 +195,7 @@ h3 {
 @media only screen and (min-width: 481px) {
 body {
 	line-height:1.375em;
+	/* background: url("../images/portal_white.png") no-repeat fixed bottom right; */
 }
 h1 {
 	font-size: 2em;
