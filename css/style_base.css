@@ -86,16 +86,20 @@ h3 {
 	text-align: center;
 	color: white;
 }
+/*
 .banner {
 	max-width: 180px;
 	margin-left:15px;
 	float: left;
 
-}
-#logo {
-	margin-top: 20px;
-}
+}*/
+.banner {
+	margin: 0 auto;
+	max-width: 180px;
+	position: relative;
+	top:20%;
 
+}
 
 .navbar_button{
 	float: right;
