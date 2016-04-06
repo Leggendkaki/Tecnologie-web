@@ -61,6 +61,7 @@ h3 {
 
 #header_container {
 	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover.jpg");
+	margin: 0 auto;
 	width:100%;
 	height: 300px;
 	background-position: 50%;
@@ -80,32 +81,26 @@ h3 {
 	width:100%;
 	clear: both;
 }
-.mainh1 {
-	position: relative;
-	top:60%;
-	text-align: center;
-	color: white;
-}
-/*
-.banner {
-	max-width: 180px;
-	margin-left:15px;
-	float: left;
-
-}*/
-.banner {
-	margin: 0 auto;
-	max-width: 180px;
-	position: relative;
-	top:20%;
-
-}
 
 .navbar_button{
 	float: right;
-	margin-right:20px;
-	margin-top: 17px;
 }
+
+.banner {
+	clear: both;
+	margin: 0 auto;
+	display: block;
+	max-width: 180px;
+
+}
+
+.maintext {
+	text-align:center;
+	clear:both;
+	color: white;
+}
+
+
 
 .navbar {
 	clear: both;
