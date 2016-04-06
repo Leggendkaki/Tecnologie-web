@@ -46,12 +46,16 @@ h3 {
 }
 
 #header_container {
-	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover.jpg");
+
 	margin: 0 auto;
 	width:100%;
-	height: 200px;
-	background-position: 50%;
+	height: 300px;
+	background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover.jpg") no-repeat center center scroll;
+/*	-webkit-background-size: cover;
+	-moz-background-size: cover;*/
 	background-size: cover;
+	/*-o-background-size: cover;*/
+
 	text-align: center;
 	position: relative;
 }
