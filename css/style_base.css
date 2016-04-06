@@ -127,8 +127,9 @@ h3 {
 }
 
 .navbar a {
-	font-family: 'Coda', cursive;
+	font-family: Lucida Grande, Optima-Regular, Verdana, sans-serif;
 	text-decoration: none;
+	display: block;
 }
 
 .navbar a:hover {
@@ -165,6 +166,15 @@ h3 {
 
 .text_card {
 	text-align: center;
+}
+
+.text_card a {
+		display: block;
+		text-decoration: none;
+		font-family: Lucida Grande, Optima-Regular, Verdana, sans-serif;
+		line-height: 1.8em;
+		font-weight: bold;
+		color: #191919;
 }
 
 .card-1 {
