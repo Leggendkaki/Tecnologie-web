@@ -67,6 +67,28 @@ h3 {
 	max-width: 35px;
 }
 
+.navbar_button:hover {
+			/*shadow*/
+	z-index:1000;
+	box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+	-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+}
+
+.navbar_button:active {
+			/*shadow*/
+	z-index:1000;
+	box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+	-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+			/*zoom*/
+	-webkit-transform:scale(1.2); /* Safari and Chrome */
+    -moz-transform:scale(1.2); /* Firefox */
+    -ms-transform:scale(1.2); /* IE 9 */
+    -o-transform:scale(1.2); /* Opera */
+     transform:scale(1.2);
+}
+
 .banner {
 	clear: both;
 	display: inline-block;
@@ -152,10 +174,29 @@ h3 {
 	margin: 0 auto;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	position: relative;
 	width: 94%;
 	padding: 0px;
 	overflow: hidden;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card:active {
+			/*shadow*/
+	z-index:1000;
+	box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+	-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+			/*zoom*/
+	-webkit-transform:scale(0.9); /* Safari and Chrome */
+    -moz-transform:scale(0.9); /* Firefox */
+    -ms-transform:scale(0.9); /* IE 9 */
+    -o-transform:scale(0.9); /* Opera */
+     transform:scale(0.9);
 }
 
 .card_title {
@@ -197,15 +238,6 @@ h3 {
 	text-align: center;
 	padding: 2%;
 	background: #80CBC4;
-}
-
-.card_animation {
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	transition: all 0.2s ease-in-out;
-}
-
-.card_animation:hover {
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 #footer_container {
@@ -305,24 +337,7 @@ h3 {
 	text-align: center;
 	clear: both;
 } 
-.card {
-	width: 90%;
-	height: auto;
-	margin: 20px;
-	padding: 0;
-	clear: none;
-	display: inline-block;
-	vertical-align: middle;
-}
 
-.img_card {
-	height: 85%;
-	overflow: hidden;
-}
-
-.text_card {
-	
-}
 }
 
 /* =============================================== DESKTOP ===============================================*/
