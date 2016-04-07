@@ -84,7 +84,7 @@ h3 {
 .breadcrumb {
 	clear: both;
 	float: left;
-	width: 90%;
+	width: 88%;
 	position: absolute;
 	left: 2%;
 	bottom: 0;
@@ -156,6 +156,9 @@ h3 {
 	width: 94%;
 	padding: 0px;
 	text-align: justify;
+}
+
+.card p {	
 }
 
 .text_card {
@@ -278,7 +281,7 @@ h3 {
 	clear: both;
 } 
 .card {
-	width: 40%;
+	width: 90%;
 	height: auto;
 	margin: 20px;
 	padding: 0;
