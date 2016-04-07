@@ -150,28 +150,53 @@ h3 {
 	background: #fff;
 	border-radius: 2px;
 	margin: 0 auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	position: relative;
 	width: 94%;
 	padding: 0px;
-	text-align: justify;
+	overflow: hidden;
 }
 
-.card p {	
-}
-
-.text_card {
-	text-align: center;
-}
-
-.text_card a {
-	display: block;
+.card_title {
 	text-decoration: none;
+	background: #009688;
+}
+
+.card_title h2 {
 	font-family: Lucida Grande, Optima-Regular, Verdana, sans-serif;
-	line-height: 1.8em;
 	font-weight: bold;
-	color: #191919;
+	color: white;
+	text-align: center;
+	padding: 2%;
+	background: #009688;
+}
+
+.card_img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+.card_text {
+	font-size: 1em;
+	text-align: justify;
+	padding: 2%;
+}
+
+.card_button {
+	text-decoration: none;
+	width: 100%;
+}
+
+.card_button p{
+	font-family: Lucida Grande, Optima-Regular, Verdana, sans-serif;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	padding: 2%;
+	background: #80CBC4;
 }
 
 .card_animation {
