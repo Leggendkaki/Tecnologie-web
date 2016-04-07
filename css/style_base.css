@@ -322,4 +322,8 @@ h3 {
 #content_container {
 	max-width:1232px;
 }
+
+.navbar {
+	display: inline;
+}
 }
