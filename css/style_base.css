@@ -332,12 +332,51 @@ h3 {
 }
 
 #content_container {
-	margin: auto;
-	width:100%;
+	width: 95%;
 	text-align: center;
-	clear: both;
+	margin: 0 auto;
 } 
+.card {
+	width: 95%;
+	margin: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
 
+.card_img {
+	float: left;
+	width: 40%;
+}
+
+.card_title {
+	
+}
+
+.card_title h2 {
+	padding: 1%;
+	font-size: 1.325em;
+}
+
+.card_text {
+	float: left;
+	width: 56%;
+	margin: 0;
+}
+
+.card_button {
+	
+}
+
+.card_button p{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 58%;
+	padding: 1%;
+	font-size: 1em;
+	line-height: 1.1em;
+}
 }
 
 /* =============================================== DESKTOP ===============================================*/
