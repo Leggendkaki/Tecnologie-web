@@ -339,7 +339,7 @@ h3 {
 } 
 .card {
 	width: 95%;
-	margin: 15px;
+	margin: 10px;
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
@@ -405,10 +405,31 @@ h3 {
 }
 
 #content_container {
-	max-width:1232px;
+	width: 100%;
 }
 
 .navbar {
 	display: inline;
+}
+
+.card {
+	width: 48%;
+	margin: 10px;
+}
+
+.card_img {
+	width: 50%;
+}
+.card_text {
+	float: left;
+	width: 48%;
+}
+
+.card_button {
+	
+}
+
+.card_button p{
+	width: 48%;
 }
 }
