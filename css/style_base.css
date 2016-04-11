@@ -171,7 +171,7 @@ h3 {
 	width:100%;
 	clear: both;
 }
-
+									/*index*/
 .card {
 	background: #fff;
 	border-radius: 2px;
@@ -244,6 +244,44 @@ h3 {
 	background: #80CBC4;
 }
 
+									/*description*/
+#description_container {
+	margin: 5px;
+}
+
+.text_logo {
+	width: 30%;
+	margin: 10px;
+	float: left;
+	vertical-align: middle;
+}
+
+.text_image {
+	width: 100%;
+}
+
+.description_text {
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.italic {
+	font-style: italic;
+}
+
+
+#downloads {
+	margin: auto;
+	width:100%;
+	text-align: center;
+	clear: both;
+}
+
+.download_button {
+	width: 44%;
+	margin: 8px;
+}
+
 #footer_container {
 	margin: auto;
 	width:100%;
@@ -259,7 +297,6 @@ h3 {
 @media only screen and (min-width: 481px) {
 body {
 	line-height:1.375em;
-	/* background: url("../images/portal_white.png") no-repeat fixed bottom right; */
 }
 h1 {
 	font-size: 2em;
@@ -354,10 +391,6 @@ h3 {
 	width: 40%;
 }
 
-.card_title {
-	
-}
-
 .card_title h2 {
 	padding: 1%;
 	font-size: 1.325em;
@@ -371,10 +404,6 @@ h3 {
 	font-size: 0.875em;
 }
 
-.card_button {
-	
-}
-
 .card_button p{
 	position: absolute;
 	bottom: 0;
@@ -383,6 +412,15 @@ h3 {
 	padding: 1%;
 	font-size: 1em;
 	line-height: 1.1em;
+}
+
+									/*description*/
+.text_logo {
+	width: 20%;
+}
+
+.download_button {
+	width: 35%;
 }
 }
 
