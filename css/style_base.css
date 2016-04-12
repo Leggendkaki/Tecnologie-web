@@ -135,6 +135,8 @@ h3 {
 	margin: 0 auto;
 }
 
+.show{display:block}
+
 .navbar ul {
 	list-style-type: none;
 	padding: 0;	/*no starting padding left*/
@@ -376,7 +378,7 @@ h3 {
 	width: 95%;
 	text-align: center;
 	margin: 0 auto;
-} 
+}
 
 .card {
 	width: 95%;
@@ -468,7 +470,7 @@ h3 {
 }
 
 .card_button {
-	
+
 }
 
 .card_button p{
