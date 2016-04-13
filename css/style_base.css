@@ -345,7 +345,7 @@ h3 {
 .navbar {
 	clear: both;
 	width: 100%;
-	display: inline;
+	display: inline!important;
 	margin: auto;
 	text-align: center;
 }
@@ -424,6 +424,7 @@ h3 {
 .download_button {
 	width: 35%;
 }
+
 }
 
 /* =============================================== DESKTOP ===============================================*/
@@ -453,7 +454,7 @@ h3 {
 }
 
 .navbar {
-	display: inline;
+	display: inline!important;
 }
 
 .card {
