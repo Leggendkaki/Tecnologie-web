@@ -448,32 +448,4 @@ h3 {
 	display: none;
 }
 
-#content_container {
-	width: 100%;
-}
-
-.navbar {
-	display: inline!important;
-}
-
-.card {
-	width: 45%;
-	margin: 5px;
-}
-
-.card_img {
-	width: 50%;
-}
-.card_text {
-	float: left;
-	width: 48%;
-}
-
-.card_button {
-
-}
-
-.card_button p{
-	width: 48%;
-}
 }
