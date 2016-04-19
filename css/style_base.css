@@ -317,7 +317,6 @@ input[type=text] {
 	overflow: hidden;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	transition: all 0.2s ease-in-out;
-
 }
 
 
@@ -456,6 +455,12 @@ h3 {
 	width: 35%;
 }
 
+.card_guide {
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
 }
 
 /* =============================================== DESKTOP ===============================================*/
@@ -480,4 +485,12 @@ h3 {
 	display: none;
 }
 
+.card_guide {
+	width: 45%;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 }
