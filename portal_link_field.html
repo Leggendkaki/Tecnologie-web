@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	<!--Inserito subito, regola 512B-->
+		<title>Portali, link e field</title>
+		<meta name="title" content="Ingress Level up - Progetto di Tecnlogie web" />
+		<meta name="description" content="cosa sono i portali, i link e i field - Ingress Level up" />
+		<meta name="keywords" content="Ingress Level up, Ingress, progetto, tecnologie web" />
+		<meta name="language" content="italian it" />
+		<meta name="author" content="Lorenzo Bellemo, Tommaso Solani" />
+
+		<meta name="HandheldFriendly" content="True"/>		<!--ottimizzazione mobile-->
+		<meta name="MobileOptimized" content="320"/>		<!--ottimizzazione mobile-->
+		<meta http-equiv="cleartype" content="on"/>
+
+		<link href='https://fonts.googleapis.com/css?family=Coda:400,800' rel='stylesheet' type='text/css' />
+
+		<!-- Link foglio di stile-->
+		<link href="css/style_base.css" rel="stylesheet" type="text/css" media="screen"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>	<!-- Website responsive -->
+
+
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			//When btn is clicked prova
+			$(".navbar_button").click(function() {
+			$(".navbar").toggleClass("show");;
+			});
+			});
+		</script>
+
+	</head>
+
+	<body>
+											<!-- HEADER -->
+		<div id="header_container">
+			<img src="images/icons/button_mobile.png" class="navbar_button" alt="mobile menu"/>
+			<img src="images/logo_UP_noback.png" alt="Level UP" class="banner"/>
+			<div class="titles">
+				<h1 class="maintext">Ingress Level UP</h1>
+				<p class="maintext">"The world around you is not what it seems"</p>
+			</div>
+			
+			<div class="breadcrumb">
+				<ol>
+					<li>Ti trovi in:</li>
+					<li><a href="index.html">Home</a></li>
+					<li>/</li>
+					<li>Lista guide</li>
+					<li>/</li>
+					<li>Portali, link e field</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Il gioco</a></li>
+				<li><a href="guide_list.html">Guide</li>
+				<li><a href="portali_lista.html">Lista portali</a></li>
+				<li><a href="submit.html">Submit</a></li>
+			</ul>
+		</div>
+											<!-- CONTENT -->
+	<div id="content_container">
+	
+	<img src="images/screen/portal_idle.png" alt="Schermata portale" class="screen"/>
+	<p>I Portali sono l'elemento su cui si basa tutto il gioco; possono essere di 3 colori: verde ( Enlightened) , blu ( Resistance) o grigio (neutro ). Perché un portale sia “in salute” e più resistente agli attacchi nemici è sempre bene utilizzare dei mod da difesa (ne parleremo più avanti) e tenere i risonatori sempre al massimo livello di carica. Le azioni che si possono compiere su di un portale possono essere diverse.</p>
+	<img src="images/screen/portal_hack.png" alt="Schermata_hack" class="screen"/>
+	<p>Azione che permette di ottenere oggetti. Un hack su un portale della fazione avversaria comporta +100AP ma meno oggetti. Ogni hack comporta un consumo di XM, secondo la formula Portal Level * 50 XM. Sappiate che potete anche fare il gioco dei glifi per avere più items. Trovate la spiegazione qui E’ interessante anche sapere come estendere il numero di hack sui portali e diminuire il tempo tra un hack e l’altro, e qui introduciamo il termine FARM (dall’inglese to farm che utilizziamo per indicare l’acquisizione di un grande numero di oggetti tramite l’azione di HACK)</p>
+	<img src="images/screen/portal_deploy.png" alt="Schermata_deploy" class="screen"/>
+	<ol>
+	<li>su un portale verde (illuminati): per riempire automaticamente con i risonatori presenti in inventario gli slot vuoti (quando il portale non è completo) o per sostituire risonatori con altri di livello più alto. A seconda del livello dei risonatori, cambia il numero di quelli deployabili</li>
+	<li>su un portale blu (resistenza): dà la possibilità di vedere i risonatori con indicato il nome del player che li ha posizionati</li>
+	<li>su un portale grigio (unclaimed): si usa per prenderne il possesso schierando i risonatori.</li>
+	</ol>
+	<p>N.B. il deploy dei risonatori su un portale va effettuato nel massimo range possibile, quindi posizionandosi col portale a filo del cerchio arancione.</p>
+	<img src="images/screen/portal_idle.png" alt="Schermata portale" class="screen"/>
+	<p>Puoi collegare due portali tra loro. Tre portali collegati tra loro a formare un triangolo creano un Control Field. Lo spazio occupato dal field è assegnato alla fazione del giocatore, che viene premiata con un numero di MU (Mind Units) dipendente dalla densità di popolazione e dalla dimensione del field.</p>
+	<p>Ogni link aumenta la difesa di un portale in termini di mitigazione (difesa) dell’attacco avversario.</p>
+	
+	<ol>
+		<li>Essere nel range del portale di partenza.</li>
+		<li>Avere la chiave del portale di destinazione, una volta creato il link, la chiave non sarà più presente nell’ inventario.</li>
+		<li>l portale di partenza e quello di destinazione del link devono avere entrambi tutti e 8 i risonatori.</li>
+		<li>Se un portale si trova all’interno di un field più grande, lo stesso potrà essere linkato solo dai vertici del field (ma non il contrario).</li>
+		<li>Un link non può incrociarne un altro, per questo è buona regola effettuare un link sempre verso il portale più vicino.</li>
+	</ol>
+	
+	</div>
+	
+											<!-- FOOTER -->
+	<div id="footer_container">
+		<a href="http://validator.w3.org/check?uri=referer">
+			<img src="images/icons/valid-xhtml11.png"  class="valid" alt="Valid XHTML 1.1"/>
+		</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img src="images/icons/vcss-blue.gif"  class="valid" alt="Valid CSS" />
+		</a>
+	</div>
+
+	</body>
+</html>
