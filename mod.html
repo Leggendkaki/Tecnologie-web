@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	<!--Inserito subito, regola 512B-->
+		<title>Portali, link e field</title>
+		<meta name="title" content="Ingress Level up - Progetto di Tecnlogie web" />
+		<meta name="description" content="cosa sono i portali, i link e i field - Ingress Level up" />
+		<meta name="keywords" content="Ingress Level up, Ingress, progetto, tecnologie web" />
+		<meta name="language" content="italian it" />
+		<meta name="author" content="Lorenzo Bellemo, Tommaso Solani" />
+
+		<meta name="HandheldFriendly" content="True"/>		<!--ottimizzazione mobile-->
+		<meta name="MobileOptimized" content="320"/>		<!--ottimizzazione mobile-->
+		<meta http-equiv="cleartype" content="on"/>
+
+		<link href='https://fonts.googleapis.com/css?family=Coda:400,800' rel='stylesheet' type='text/css' />
+
+		<!-- Link foglio di stile-->
+		<link href="css/style_base.css" rel="stylesheet" type="text/css" media="screen"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>	<!-- Website responsive -->
+
+
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			//When btn is clicked prova
+			$(".navbar_button").click(function() {
+			$(".navbar").toggleClass("show");;
+			});
+			});
+		</script>
+
+	</head>
+
+	<body>
+											<!-- HEADER -->
+		<div id="header_container">
+			<img src="images/icons/button_mobile.png" class="navbar_button" alt="mobile menu"/>
+			<img src="images/logo_UP_noback.png" alt="Level UP" class="banner"/>
+			<div class="titles">
+				<h1 class="maintext">Ingress Level UP</h1>
+				<p class="maintext">"The world around you is not what it seems"</p>
+			</div>
+			
+			<div class="breadcrumb">
+				<ol>
+					<li>Ti trovi in:</li>
+					<li><a href="index.html">Home</a></li>
+					<li>/</li>
+					<li><a href="guide_list.html">Lista guide</a></li>
+					<li>/</li>
+					<li>Portali, link e field</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Il gioco</a></li>
+				<li><a href="guide_list.html">Guide</a></li>
+				<li><a href="portali_lista.html">Lista portali</a></li>
+				<li><a href="submit.html">Submit</a></li>
+			</ul>
+		</div>
+											<!-- CONTENT -->
+	<div id="content_container">
+	
+	<img src="images/screen/portal_idle.png" alt="Schermata portale" class="screen"/>
+	<p>Gli oggetti si dividono in Media, Mods, Portal Keys, Power Cubes, Resonators, Capsule e Weapons.</p>
+	
+	<p>Modificatori da DIFESA</p>
+	<ul>
+		<li>PORTAL SHIELD : aumenta la difesa di un portale: Comune (+30%), Raro (+40%), Molto Raro(+60%) e AXA (+70%).</li>
+			<p>Sebbene potrebbe sembrare una ottima idea usare un AXA Shield o un Portal Shield Molto Raro su un portale di livello basso o su un portale deployato male per tentare di difenderlo, essaè una pessima scelta strategica in quanto le mod cadono quando cadono i risonatori. Se iresonators sono di livello troppo basso o il portale è deployato male, con qualche bomba i resonators si scaricano e il portale non gode per nulla dell’effetto della mod, per questi motivi, meglio conservarle per scopi futuri.</p>
+		<li>FORCE AMP : Raro, aumenta il danno inflitto da un portale verso il giocatore della squadra avversaria che lo attacca.</li>
+			<p>Posizionarlo in combo con una turret o con un portal shield comune è la scelta migliore. Non posizionarne più di 1 a portale.</p>
+		<li>TURRET : Raro, aumenta il numero di volte che il portale sotto attacco, attacca (in gergo la chiamiamo schicchera ) il giocatore della squadra avversaria.</li>
+			<p>Posizionarlo in combo con una force amp o con un portal shield common è la scelta migliore. Non posizionarne più di 1 a portale.</p>
+	</ul>
+	
+	<p>Modificatori da FARM</p>
+	<p>Su un portale senza mod, hai la possibilità di fare HACK ogni 5 minuti per un totale di 4 ogni 4 ore. Quindi, supponiamo che siano le 9:30 del mattino, facciamo subito un HACK, uno alle 9.35, poi alle 9.40 e l’ultimo alle 9.45. Fino alle 13.30 il portale non sarà più possibile fare hack. Gli hack possono anche essere distribuiti nell’arco delle 4 ore, quello che conta è l’orario del primo hack.</p>
+	<ul>
+		<li>HEAT SINK : diminuisce il cooldown di un portale tra un hack e quello successivo che di default è di 5 minuti. Inoltre, posizionarne uno resetta il numero di hack fatti fino a quel momento sul portale, quindi ne avrai altri 4 a disposizione, Attenzione però, questo vale solo per te! quindi se stai farmando items con altre persone è preferibile posizionare un Multi Hack.</li>
+			<p>Comune 20% (4 minuti di attesa), Raro 50% (2,5 minuti di attesa) e Molto Raro 70% (1,5 minuti di attesa); L’Heat Sink più raro che viene posizionato sul portale diminuisce il tempo di cooldown del 100% del suo potenziale, il secondo di rarità uguale o inferiore, darà cooldown pari al 50% della sua efficacia</p>
+		<li>MULTI-­HACK : aumenta il numero di hack possibili su un portale (default 4 ogni 4 ore dal primo hack. Comune +4 hack, Raro +8 hack, Molto Raro +12 hack</li>
+			<p>Il Multi Hack più raro che viene posizionato sul portale aumenta il numero di hack per il 100% del suo potenziale, il secondo di rarità uguale o inferiore, darà un numero di hack pari al 50% della sua efficacia</p>
+	</ul>
+	
+	<p>Modificatori STRATEGICI</p>
+	<ul>
+		<li>LINK AMP : Raro, serve ad aumentare la distanza che si può coprire con un link da un portale ad un altro;;</li>
+			<p>Il primo Link Amp posizionato sul portale raddoppia la gittata del link. Il secondo aumenta del 25%, il terzo e il quarto del 12.5%, per un totale massimo (occupando tutti e 4 gli slot) di 2x la gittata iniziale del portale.</p>
+		<li>SOFTBANK ULTRA LINK: Molto Raro, serve ad aumentare la distanza che può coprire il link, la protezione che da un link ad un portale (detta mitigazione) e il numero di link in uscita da un portale (di default 8 link in uscita, infiniti in entrata) di 8 per ogni Ultra Link posizionato sul portale.</li>
+	</ul>
+	
+	</div>
+	
+											<!-- FOOTER -->
+	<div id="footer_container">
+		<a href="http://validator.w3.org/check?uri=referer">
+			<img src="images/icons/valid-xhtml11.png"  class="valid" alt="Valid XHTML 1.1"/>
+		</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img src="images/icons/vcss-blue.gif"  class="valid" alt="Valid CSS" />
+		</a>
+	</div>
+
+	</body>
+</html>
