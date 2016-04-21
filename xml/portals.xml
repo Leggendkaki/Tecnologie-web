@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<portal_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" portal.xsd">
+
+		<portal IDCode="1"><!--codice identificativo per ogni portale-->
+			<title>Torre Archimede</title>
+			<img>http://lh6.ggpht.com/llJacaJGVkoj8Y_BK_bLineHNQDB2w0L9QTZ7IIxa147AmgBDlGcCrhIuxYC3HUocx-x4wn_vtwgMRzAFTJ2</img>
+			<description>
+				Dipartimento di Matematica - Università degli studi di Padova
+			</description>
+			<latitude>45.411157</latitude>
+			<longitude>11.887541</longitude>
+			<nickname>kcolived</nickname>
+			<email>kcicio@test.it</email>
+		</portal>
+		
+		<portal IDCode="2"><!--codice identificativo per ogni portale-->
+			<title>Aula Luzzati</title>
+			<img>http://lh6.ggpht.com/XZXGb8j_CQ2AFD_tCSC-BXGa_DNPvhncYC7JgXrtIcrOmbnQwdrBW48tncsfbTSF13nSWAWFH4Qjd5v6K6tT1g</img>
+			<description>
+				Aule dell'Università degli studi di Padova
+			</description>
+			<latitude>45.408318</latitude>
+			<longitude>11.886975</longitude>
+			<nickname>Leggend</nickname>
+			<email>leggend.lorenzo@gmail.com</email>
+		</portal>
+		
+</portal_list>
