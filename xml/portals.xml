@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
-<portal_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" XMLschema.xsd">
+<portal_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-		<portal id="1"><!--codice identificativo per ogni portale-->
+		<portal ID="1"><!--codice identificativo per ogni portale-->
 			<title>Torre Archimede</title>
 			<img>http://lh6.ggpht.com/llJacaJGVkoj8Y_BK_bLineHNQDB2w0L9QTZ7IIxa147AmgBDlGcCrhIuxYC3HUocx-x4wn_vtwgMRzAFTJ2</img>
 			<description>
@@ -14,7 +14,7 @@
 			<email>kcicio@test.it</email>
 		</portal>
 		
-		<portal id="2"><!--codice identificativo per ogni portale-->
+		<portal ID="2"><!--codice identificativo per ogni portale-->
 			<title>Aula Luzzati</title>
 			<img>http://lh6.ggpht.com/XZXGb8j_CQ2AFD_tCSC-BXGa_DNPvhncYC7JgXrtIcrOmbnQwdrBW48tncsfbTSF13nSWAWFH4Qjd5v6K6tT1g</img>
 			<description>

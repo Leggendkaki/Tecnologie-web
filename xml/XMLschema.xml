@@ -5,11 +5,9 @@
 
 <xs:complexType name="Tportal_list">
 	<xs:sequence>
-	<xs:element name="portal" type="Tportal" />
+	<xs:element name="portal" type="Tportal" maxOccurs="unbounded"/>
 	</xs:sequence>
 </xs:complexType>
-
-
 
 <xs:complexType name="Tportal">
 		<xs:sequence>
@@ -22,9 +20,7 @@
 			<xs:element name="email" type="xs:string" />
 		</xs:sequence>
 		
-		<xs:attribute name="id" type="xs:IDREF" use="required" />
+		<xs:attribute name="ID" type="xs:IDREF" use="required" />
 </xs:complexType>
-
-
 
 </xs:schema>
