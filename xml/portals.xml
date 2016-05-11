@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
-<portal_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" portal.xsd">
+<portal_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" XMLschema.xsd">
 
 		<portal id="1"><!--codice identificativo per ogni portale-->
 			<title>Torre Archimede</title>
