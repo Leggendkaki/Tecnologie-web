@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="portal">
+
+	<xs:complexType>
+		
+		<xs:sequence>
+		
+			<xs:element name="title" type="xs:string" />
+			<xs:element name="img" type="xs:string" />
+			<xs:element name="description" type="xs:string" />
+			<xs:element name="latitude" type="xs:float" />
+			<xs:element name="longitude" type="xs:float" />
+			<xs:element name="nickname" type="xs:string" />
+			<xs:element name="email" type="xs:string" />
+		
+		</xs:sequence>
+		
+		<xs:attribute name="id" type="xs:IDREF" use="required" />
+		
+	</xs:complexType>
+
+</xs:element>
+
+</xs:schema>
