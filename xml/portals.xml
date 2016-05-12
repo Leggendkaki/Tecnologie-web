@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
 <portal_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 		<portal ID="1"><!--codice identificativo per ogni portale-->
 			<title>Torre Archimede</title>
-			<img>http://lh6.ggpht.com/llJacaJGVkoj8Y_BK_bLineHNQDB2w0L9QTZ7IIxa147AmgBDlGcCrhIuxYC3HUocx-x4wn_vtwgMRzAFTJ2</img>
+			<img>Torre_Archimede.jpg</img>
 			<description>
 				Dipartimento di Matematica - Università degli studi di Padova
 			</description>
@@ -16,7 +16,7 @@
 		
 		<portal ID="2"><!--codice identificativo per ogni portale-->
 			<title>Aula Luzzati</title>
-			<img>http://lh6.ggpht.com/XZXGb8j_CQ2AFD_tCSC-BXGa_DNPvhncYC7JgXrtIcrOmbnQwdrBW48tncsfbTSF13nSWAWFH4Qjd5v6K6tT1g</img>
+			<img>Aula_Luzzati.jpg</img>
 			<description>
 				Aule dell'Università degli studi di Padova
 			</description>
