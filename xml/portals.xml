@@ -26,4 +26,15 @@
 			<email>leggend.lorenzo@gmail.com</email>
 		</portal>
 		
+		<portal ID="2"><!--codice identificativo per ogni portale-->
+			<title>Complesso Paolotti</title>
+			<img>Complesso_Paolotti.jpg</img>
+			<description>
+			</description>
+			<latitude>45.407888</latitude>
+			<longitude>11.886188</longitude>
+			<nickname>Leggend</nickname>
+			<email>leggend.lorenzo@gmail.com</email>
+		</portal>
+		
 </portal_list>
