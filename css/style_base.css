@@ -353,6 +353,14 @@ input[type=text] {
 .interface_bold {
 	font-weight: bold;
 }
+												/*Portal Link Field*/
+#container_portal_link_field {
+	margin: auto;
+	width:100%;
+	text-align: center;
+	clear: both;
+}
+
 /* =============================================== TABLET ===============================================*/
 @media only screen and (min-width: 481px) {
 body {
