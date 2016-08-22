@@ -455,7 +455,7 @@ h3 {
 	font-size: 0.875em;
 }
 
-.card_button p {
+.card_button {
 	position: absolute;
 	bottom: 0;
 	right: 0;
