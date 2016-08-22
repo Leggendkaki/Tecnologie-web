@@ -343,14 +343,11 @@ input[type=text] {
 	padding-top: 5px;
 }
 
-#interface {
+.align_left {
 	padding-left: 25px;
 	padding-right: 5px;
 	text-align: left;
-}
-
-#interface li {
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 .interface_bold {
