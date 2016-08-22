@@ -252,6 +252,7 @@ a.card_title {
 	margin: 10px;
 	float: left;
 	vertical-align: middle;
+	padding-top: 10px;
 }
 
 .text_image {
@@ -263,6 +264,7 @@ a.card_title {
 	padding-right: 5px;
 	padding-bottom: 20px;
 	text-align: justify;
+	padding-top: 10px;
 }
 
 .italic {
