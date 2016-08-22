@@ -339,7 +339,7 @@ input[type=text] {
 }
 
 .screen {
-	width: 80%;
+	width: 50%;
 	padding-top: 5px;
 }
 
@@ -485,12 +485,6 @@ h3 {
 	width: 35%;
 }
 
-.card_guide {
-	width: 100%;
-	display: inline-block;
-	vertical-align: middle;
-	position: relative;
-}
 }
 
 /* =============================================== DESKTOP ===============================================*/
