@@ -308,19 +308,6 @@ input[type=text] {
 	clear: both;
 	margin: 0 auto;
 }
-
-.card_guide {
-	background: #fff;
-	border-radius: 2px;
-	margin: 0 auto;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	width: 100%;
-	padding: 0px;
-	overflow: hidden;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	transition: all 0.2s ease-in-out;
-}
 												
 												
 												/*Interface*/
@@ -432,11 +419,12 @@ h3 {
 	text-decoration: none;
 	display: block;
 }
-
-#content_container {
-	width: 100%;
+												/*Index*/
+#container_index {
+	width: 98%;
 	text-align: center;
 	margin: 0 auto;
+	clear: both;
 }
 
 .card {
@@ -472,9 +460,20 @@ h3 {
 	padding: 1%;
 	font-size: 1em;
 	line-height: 1.1em;
+	text-decoration: none;
+	width: 58%;
+	display: block;
 }
 
-									/*description*/
+												/*Guide list*/
+#container_guide_list {
+	width: 98%;
+	text-align: center;
+	margin: 0 auto;
+	clear: both;
+}
+
+												/*description*/
 
 .download_button {
 	width: 35%;
@@ -503,18 +502,13 @@ h3 {
 .navbar_button {
 	display: none;
 }
+									/*Index*/
 
 .card {
-	width: 48%;
 	margin: 5px;
-	float: left;
-}
-
-.card_guide {
 	width: 45%;
 	display: inline-block;
 	vertical-align: middle;
-	position: relative;
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -553,4 +547,8 @@ h3 {
 	width: 44%;
 	margin: 8px;
 }
+
+												/*Guide list*/
+												
+												
 }
