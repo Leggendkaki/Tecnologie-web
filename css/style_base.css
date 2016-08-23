@@ -243,17 +243,10 @@ a.card_title {
 
 									/*description*/
 #container_description {
-	width: 100%;
+	width: 98%;
 	clear: both;
 	margin: 0 auto;
-}
-
-.text_logo {
-	width: 30%;
-	margin: 10px;
-	float: left;
-	vertical-align: middle;
-	padding-top: 10px;
+	text-align: center;
 }
 
 .text_image {
@@ -482,9 +475,6 @@ h3 {
 }
 
 									/*description*/
-.text_logo {
-	width: 20%;
-}
 
 .download_button {
 	width: 35%;
@@ -527,5 +517,40 @@ h3 {
 	position: relative;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+									/*description*/
+#container_description {
+	width: 90%;
+	text-align: center;
+}
+
+.text_image {
+	width: 60%;
+}
+
+.description_text {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+
+#downloads {
+	margin: auto;
+	width:50%;
+	text-align: center;
+	clear: both;
+}
+
+.download_button {
+	width: 44%;
+	margin: 8px;
 }
 }
