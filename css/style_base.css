@@ -575,7 +575,6 @@ h3 {
 
 									/*Description*/
 #container_description {
-	width: 90%;
 	text-align: center;
 }
 
@@ -608,6 +607,15 @@ h3 {
 	margin: 8px;
 }
 									/*Interface*/
+#container_interface container_description container_inventory container_mod container_portal_link_field{
+	width:85%;
+}
+
+.p_intel {
+	width: 90%;
+	margin: 0 auto;
+}
+
 .screen {
 	width: 20%;
 }
