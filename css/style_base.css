@@ -44,6 +44,13 @@ h3 {
 	line-height: 1.13636364em;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	clear: both;
+}
+
 #header_container {
 
 	margin: 0 auto;
@@ -318,16 +325,24 @@ input[type=text] {
 	clear: both;
 }
 
+.p_interface {
+	padding: 5px;
+}
+
 .screen {
 	width: 50%;
 	padding-top: 5px;
+}
+
+.list_interface {
+	padding-top: 20px;
 }
 
 .align_left {
 	padding-left: 25px;
 	padding-right: 5px;
 	text-align: left;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .interface_bold {
@@ -479,6 +494,20 @@ h3 {
 	width: 35%;
 }
 
+												/*Interface*/
+#container_interface {
+	width:98%;
+}
+
+.p_interface {
+	padding: 5px;
+}
+
+.screen {
+	width: 40%;
+	padding: 20px;
+	float: left;
+}
 }
 
 /* =============================================== DESKTOP ===============================================*/
@@ -513,7 +542,7 @@ h3 {
 	margin-right: 10px;
 }
 
-									/*description*/
+									/*Description*/
 #container_description {
 	width: 90%;
 	text-align: center;
@@ -547,8 +576,9 @@ h3 {
 	width: 44%;
 	margin: 8px;
 }
+									/*Interface*/
+.screen {
+	width: 20%;
+}
 
-												/*Guide list*/
-												
-												
 }
