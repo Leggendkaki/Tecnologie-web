@@ -355,6 +355,33 @@ input[type=text] {
 	text-align: center;
 	clear: both;
 }
+												/*Inventory*/
+#container_inventory {
+	margin: auto;
+	width:100%;
+	text-align: center;
+	clear: both;
+}
+
+#container_mod {
+	margin: auto;
+	width:100%;
+	text-align: center;
+	clear: both;
+}
+
+#container_intel {
+	margin: auto;
+	width:100%;
+	text-align: center;
+	clear: both;
+}
+
+.screen_intel {
+	width: 90%;
+	clear:both;
+	padding-top: 5px;
+}
 
 /* =============================================== TABLET ===============================================*/
 @media only screen and (min-width: 481px) {
