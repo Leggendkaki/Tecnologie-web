@@ -42,7 +42,7 @@
 				<h1 class="maintext" xml:lang="en">Ingress Level UP</h1>
 				<p class="maintext" xml:lang="en">"The world around you is not what it seems"</p>
 			</div>
-			
+
 			<div class="breadcrumb">
 				<ol>
 					<li>Ti trovi in:</li>
@@ -52,9 +52,9 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<div><a class="skip-main" href="#container_index">Salta al contenuto</a></div>					<!-- pulsante ad alto contrasto per lo skip -->
-		
+
 		<div class="navbar" id="menu">
 			<ul>
 				<li><a href="index.html"><span xml:lang="en">Home</span></a></li>
@@ -66,12 +66,12 @@
 		</div>
 											<!-- CONTENT -->
 	<div id="container_portal_list">
-		
-		
-		
 
-		
-		
+
+
+
+
+
 	</div>
 											<!-- FOOTER -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
