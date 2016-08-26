@@ -400,6 +400,7 @@ input[type=text] {
 	clear: both;
 }
 
+												/*Intel*/
 #container_intel {
 	margin: auto;
 	width:100%;
@@ -412,6 +413,61 @@ input[type=text] {
 	clear:both;
 	padding-top: 0.313em;
 }
+
+}
+												/*Submit*/
+#container_submit {
+	margin: 0 auto;
+	width: 98%;
+	clear: both;
+}
+
+.form {
+    padding: 1.250em;
+	margin-top: 1.250em;
+}
+
+input[type=text], input[type=number]{
+    width: 100%;
+    padding: 0.750em 1.250em;
+    margin: 0.500em;
+    border: 0.083em solid #ccc;
+    border-radius: 0.333em;
+    box-sizing: border-box;
+	clear: both;
+}
+
+input[type=image] {
+    width: auto;
+    padding: 0.750em 1.250em;
+    margin: 0.500em;
+    border: 0.083em solid #ccc;
+    border-radius: 0.333em;
+    box-sizing: border-box;
+	clear: both;
+}
+
+input[type=text]:focus, input[type=number]:focus  {
+    border: 0.083em solid orange;
+}
+
+.input_button {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #009688;
+    color: white;
+    padding: 0.875em 1.250em;
+    margin: 0.500em 0;
+    border: none;
+    border-radius: 0.333em;
+    cursor: pointer;
+}
+
 
 .login_button {
 	clear: both;
