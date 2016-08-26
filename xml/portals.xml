@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="template.xsl"?>
 <portal_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-		<portal ID="1"><!--codice identificativo per ogni portale-->
+		<portal>
 			<title>Torre Archimede</title>
 			<img>Torre_Archimede.jpg</img>
 			<description>
@@ -14,7 +14,7 @@
 			<email>kcicio@test.it</email>
 		</portal>
 		
-		<portal ID="2"><!--codice identificativo per ogni portale-->
+		<portal>
 			<title>Aula Luzzati</title>
 			<img>Aula_Luzzati.jpg</img>
 			<description>
@@ -26,7 +26,7 @@
 			<email>leggend.lorenzo@gmail.com</email>
 		</portal>
 		
-		<portal ID="2"><!--codice identificativo per ogni portale-->
+		<portal>
 			<title>Complesso Paolotti</title>
 			<img>Complesso_Paolotti.jpg</img>
 			<description>
