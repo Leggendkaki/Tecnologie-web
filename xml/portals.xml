@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+<?xml-stylesheet type="text/xsl" href="portals.xsl"?>
 <portal_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 		<portal ID="1"><!--codice identificativo per ogni portale-->
@@ -13,7 +13,7 @@
 			<nickname>kcolived</nickname>
 			<email>kcicio@test.it</email>
 		</portal>
-		
+
 		<portal ID="2"><!--codice identificativo per ogni portale-->
 			<title>Aula Luzzati</title>
 			<img>Aula_Luzzati.jpg</img>
@@ -25,7 +25,7 @@
 			<nickname>Leggend</nickname>
 			<email>leggend.lorenzo@gmail.com</email>
 		</portal>
-		
+
 		<portal ID="2"><!--codice identificativo per ogni portale-->
 			<title>Complesso Paolotti</title>
 			<img>Complesso_Paolotti.jpg</img>
@@ -36,5 +36,5 @@
 			<nickname>Leggend</nickname>
 			<email>leggend.lorenzo@gmail.com</email>
 		</portal>
-		
+
 </portal_list>
