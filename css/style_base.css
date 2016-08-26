@@ -413,6 +413,13 @@ input[type=text] {
 	padding-top: 0.313em;
 }
 
+.login_button {
+	clear: both;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.938em;
+}
+
 /* =============================================== TABLET ===============================================*/
 @media only screen and (min-width: 481px) {
 body {
