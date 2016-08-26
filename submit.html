@@ -52,9 +52,9 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<div><a class="skip-main" href="#container_submit">Salta al contenuto</a></div>					<!-- pulsante ad alto contrasto per lo skip -->
-		
+
 		<div class="navbar" id="menu">
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -66,34 +66,34 @@
 		</div>
 											<!-- CONTENT -->
 	<div id="container_submit">
-	
+
 	<div class="form">
-	<form action="action_page.php">
+	<form action="cgi-bin/addportal.cgi" method="post">
 		<label for="nickname"><span xml:lang="en">Nickname</span></label>
 		<input type="text" id="nickname" name="nickname" placeholder="Agent007" tabindex="1" accesskey="n">
 
 		<label for="email"><span xml:lang="en">E-mail</span></label>
 		<input type="text" id="email" name="email" placeholder="Agent007@gmail.com" tabindex="2" accesskey="e">
-		
+
 		<label for="name">Nome portale</label>
-		<input type="text" id="name" name="name" placeholder="Targa ai caduti" tabindex="3" accesskey="p">
-		
+		<input type="text" id="name" name="portalname" placeholder="Targa ai caduti" tabindex="3" accesskey="p">
+
 		<label for="description">Descrizione</label>
 		<input type="text" id="description" name="description" placeholder="Questo monumento è dedicato ai caduti sul lavoro" tabindex="4" accesskey="d">
-		
+
 		<label for="latitude">Latitudine</label>
 		<input type="number" id="latitude" name="latitude" placeholder="45.411157" tabindex="5" accesskey="a">
-		
+
 		<label for="longitude">Longitudine</label>
 		<input type="number" id="longitude" name="longitude" placeholder="11.887541" tabindex="6" accesskey="o">
-		
+
 		<label for="picture">Immagine portale</label>
 		<input type="image" id="picture" name="picture" tabindex="7" accesskey="i">
-  
+
 		<div class="input_button"><input type="submit" value="Invia" tabindex="8" accesskey="v"></div>
 	</form>
 	</div>
-	
+
 	</div>
 											<!-- FOOTER -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
