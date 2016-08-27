@@ -30,6 +30,16 @@
 			});
 			});
 		</script>
+		
+		<script type="text/javascript">
+		function validateForm() {
+		var x = document.forms["submitform"]["nickname"]["email"]["portalname"]["description"]["latitude"]["longitude"].value;
+		if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+			}
+		}
+		</script>
 
 	</head>
 
@@ -67,8 +77,8 @@
 											<!-- CONTENT -->
 	<div id="container_submit">
 
-	<div class="form">
-	<form action="cgi-bin/addportal.cgi" method="post">
+	<div class="form" name="submitform">
+	<form action="cgi-bin/addportal.cgi" onsubmit="return validateForm()" method="post">
 		<label for="nickname"><span xml:lang="en">Nickname</span></label>
 		<input type="text" id="nickname" name="nickname" placeholder="Agent007" tabindex="1" accesskey="n">
 
