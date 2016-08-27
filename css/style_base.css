@@ -56,14 +56,15 @@ body {
 	font-family: 'Coda', sans-serif;
 	font-size: 1em;
 	line-height: 1.25em;
-	background: #fdfdff;
+	background: #ededed;
 }
 h1{
 	font-size:2em;
 }
 h2 {
-	font-size: 1.2em;
-	line-height: 1em;
+	font-size: 1.5em;
+	line-height: 1.13636364em;
+	padding: 0.5em;
 }
 h3 {
 	font-size: 1.375em;
@@ -79,6 +80,20 @@ hr {
 
 ul li {
 	padding-bottom: 0.313em;
+}
+.center {
+	text-align: center;
+}
+
+											/*Material*/
+.primary_text {
+	color: #000000;
+	opacity: 0.87;
+}
+
+.secondary_text {
+	color: #000000;
+	opacity: 0.54;
 }
 
 #header_container {
@@ -164,6 +179,7 @@ ul li {
 	width: 95%;
 	display: none;
 	margin: 0 auto;
+
 }
 
 .show{display:block}
