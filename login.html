@@ -30,7 +30,7 @@
 			});
 			});
 		</script>
-
+		<script language="JavaScript" src="js/gen_validatorv4.js" type="text/javascript" xml:space="preserve"></script>
 	</head>
 
 	<body>
@@ -67,15 +67,30 @@
 											<!-- CONTENT -->
 	<div id="container_login">
 	<div class="form">
-	<form action="action_page.php">
-		<label for="username"><span xml:lang="en">Username</span></label>
-		<input type="text" id="username" name="username" tabindex="1" accesskey="u">
+	<form id="adminlogin" name="adminlogin" method="post">
+		<div  class="input_form"><label for="username"><span xml:lang="en">Username</span></label>
+		<div id='adminlogin_username_errorloc' class="error"></div>
+		<input type="text" name="username" tabindex="1" accesskey="u"></div>
 
-		<label for="password"><span xml:lang="en">Password</span></label>
-		<input type="password" id="password" name="password" tabindex="2" accesskey="p">
+		<div  class="input_form"><label for="password"><span xml:lang="en">Password</span></label>
+		<div id='adminlogin_password_errorloc' class="error"></div>
+		<input type="password" name="password" tabindex="2" accesskey="p"></div>
 		
 		<div class="input_button"><input type="submit" value="Login" tabindex="8" accesskey="v"></div>
 	</form>
+	<script language="JavaScript" type="text/javascript"xml:space="preserve">
+	//<![CDATA[
+	var frmvalidator  = new Validator("adminlogin");
+	
+    frmvalidator.EnableMsgsTogether();
+	frmvalidator.EnableOnPageErrorDisplay();
+	
+	frmvalidator.addValidation("username","req","Inserisci l'username");
+	
+	frmvalidator.addValidation("password","req","Inserisci la password");
+	
+	//]]>
+	</script>
 	</div>
 	</div>
 											<!-- FOOTER -->
