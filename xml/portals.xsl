@@ -71,6 +71,17 @@
 												<!-- CONTENT -->
 		<div id="container_portal_list">
 
+			
+			<div id="container_guide_list">
+				<xsl:for-each select="//portal">
+				<div class="card card_animation">
+						<span class="card_title"><xsl:value-of select="title"/> </span>
+						<span><img src="&#34;<xsl:value-of select="title"/>" class="card_img" alt="Interfaccia di gioco"/></span>
+						<dt class="card_text">Descrizione</dt>
+						<dd class="card_text"><xsl:value-of select="description"/></dd>
+					</div>
+				</xsl:for-each>
+				</div>
 
 
 
