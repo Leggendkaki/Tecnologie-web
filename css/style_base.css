@@ -82,16 +82,11 @@ ul li {
 }
 
 #header_container {
-
 	margin: 0 auto;
 	width:100%;
 	height: 13.750em;
 	background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover.jpg") no-repeat center center scroll;
-/*	-webkit-background-size: cover;
-	-moz-background-size: cover;*/
 	background-size: cover;
-	/*-o-background-size: cover;*/
-
 	text-align: center;
 	position: relative;
 }
@@ -163,7 +158,7 @@ ul li {
 .breadcrumb a {
 	color: white;
 }
-
+								/*Menu*/
 .navbar {
 	clear: both;
 	width: 95%;
@@ -203,12 +198,25 @@ ul li {
 .not_link {
 	padding: 0.750em 0.875em;
 }
-									/*index*/
-#container_index {
+
+
+									/*Container*/
+#container_content {
 	margin: 0 auto;
 	width:98%;
 	clear: both;
 }
+
+#container_content_center {
+	width: 98%;
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+									/*index*/
 
 .card {
 	background: #fff;
@@ -279,13 +287,6 @@ a.card_title {
 }
 
 									/*description*/
-#container_description {
-	width: 98%;
-	clear: both;
-	margin: 0 auto;
-	text-align: center;
-}
-
 .text_image {
 	width: 100%;
 }
@@ -315,17 +316,6 @@ a.card_title {
 	margin: 0.500em;
 }
 
-#footer_container {
-	margin: auto;
-	width:100%;
-	text-align: center;
-	clear: both;
-}
-
-.valid {
-	margin: 0.625em;
-}
-
 .portal_submit {
 	margin: 0 auto;
 	width: 80%;
@@ -337,24 +327,8 @@ input[type=text] {
 	width: 100%;
 	height: 2.500em;
 }
-
-
-												/*Guide list*/
-#container_guide_list {
-	width: 98%;
-	clear: both;
-	margin: 0 auto;
-}
-												
-												
+								
 												/*Interface*/
-#container_interface {
-	margin: auto;
-	width:100%;
-	text-align: center;
-	clear: both;
-}
-
 .p_interface {
 	padding: 0.313em;
 }
@@ -378,36 +352,7 @@ input[type=text] {
 .interface_bold {
 	font-weight: bold;
 }
-												/*Portal Link Field*/
-#container_portal_link_field {
-	margin: auto;
-	width:100%;
-	text-align: center;
-	clear: both;
-}
-												/*Inventory*/
-#container_inventory {
-	margin: auto;
-	width:100%;
-	text-align: center;
-	clear: both;
-}
-
-#container_mod {
-	margin: auto;
-	width:100%;
-	text-align: center;
-	clear: both;
-}
-
 												/*Intel*/
-#container_intel {
-	margin: auto;
-	width:100%;
-	text-align: center;
-	clear: both;
-}
-
 .screen_intel {
 	width: 90%;
 	clear:both;
@@ -480,6 +425,18 @@ input[type=submit] {
 	font-style: italic;
 }
 
+
+												/*Footer*/
+#footer_container {
+	margin: auto;
+	width:100%;
+	text-align: center;
+	clear: both;
+}
+
+.valid {
+	margin: 0.625em;
+}
 
 .login_button {
 	clear: both;
@@ -567,13 +524,6 @@ h3 {
 	display: block;
 }
 												/*Index*/
-#container_index {
-	width: 98%;
-	text-align: center;
-	margin: 0 auto;
-	clear: both;
-}
-
 .card {
 	width: 100%;
 	display: inline-block;
@@ -611,15 +561,6 @@ h3 {
 	width: 58%;
 	display: block;
 }
-
-												/*Guide list*/
-#container_guide_list {
-	width: 98%;
-	text-align: center;
-	margin: 0 auto;
-	clear: both;
-}
-
 												/*description*/
 
 .download_button {
@@ -627,10 +568,6 @@ h3 {
 }
 
 												/*Interface*/
-#container_interface {
-	width:98%;
-}
-
 .p_interface {
 	padding: 0.313em;
 }
@@ -664,6 +601,9 @@ h3 {
 	display: none;
 }
 									/*Index*/
+#container_content {
+	text-align: center;
+}
 
 .card {
 	margin: 0.313em;
@@ -675,9 +615,6 @@ h3 {
 }
 
 									/*Description*/
-#container_description {
-	text-align: center;
-}
 
 .text_image {
 	width: 60%;
@@ -708,10 +645,6 @@ h3 {
 	margin: 0.500em;
 }
 									/*Interface*/
-#container_interface container_description container_inventory container_mod container_portal_link_field{
-	width:85%;
-}
-
 .p_intel {
 	width: 90%;
 	margin: 0 auto;
