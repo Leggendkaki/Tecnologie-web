@@ -474,6 +474,12 @@ input[type=submit] {
     cursor: pointer;
 }
 
+.error {
+	font-size: 80%;
+	color: red;
+	font-style: italic;
+}
+
 
 .login_button {
 	clear: both;
