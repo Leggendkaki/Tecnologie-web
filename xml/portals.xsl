@@ -64,7 +64,7 @@
 					<li><a href="../index.html"><span xml:lang="en">Home</span></a></li>
 					<li><a href="../description.html">Il gioco</a></li>
 					<li><a href="../guide_list.html">Guide</a></li>
-					<li class="portals.xml">Portali</li>
+					<li class="portals.xml not_link">Portali</li>
 					<li><a href="../submit.html"><span xml:lang="en">Submit</span></a></li>
 				</ul>
 			</div>
@@ -75,54 +75,49 @@
 
 
 
-	<table>
-		<xsl:for-each select="//portal">
-		<tr>
-			<td>
-				<xsl:value-of select="title"/>
-			</td>
+			<table>
+				<xsl:for-each select="//portal">
+				<tr>
+				<td>
+					<xsl:value-of select="title"/>
+				</td>
 
-			<td>
-				<xsl:value-of select="description"/>
-			</td>
+				<td>
+					<xsl:value-of select="description"/>
+				</td>
 
-			<td>
-				<xsl:value-of select="img"/>
-			</td>
+				<td>
+					<xsl:value-of select="img"/>
+				</td>
 
-			<td>
-				<xsl:value-of select="latitude"/>
-			</td>
+				<td>
+					<xsl:value-of select="latitude"/>
+				</td>
 
-			<td>
-				<xsl:value-of select="longitude"/>
-			</td>
+				<td>
+					<xsl:value-of select="longitude"/>
+				</td>
 
-			<td>
-				<xsl:value-of select="nickname"/>
-			</td>
-
-
-
-		</tr>
-		</xsl:for-each>
-	</table>
-</div>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow26.js"></script>
-<div id="footer_container">
-	<a href="http://validator.w3.org/check?uri=referer">
-		<img src="images/icons/valid-xhtml11.png"  class="valid" alt="Valid XHTML 1.1"/>
-	</a>
-	<a href="http://jigsaw.w3.org/css-validator/check/referer">
-		<img src="images/icons/vcss-blue.gif"  class="valid" alt="Valid CSS" />
-	</a>
-</div>
-<div class="login_button"><a href="login.html"><span xml:lang="en">Admin login</span></a></div>
-
-
-  </body>
-  </html>
+				<td>
+					<xsl:value-of select="nickname"/>
+				</td>
+				</tr>
+				</xsl:for-each>
+			</table>
+		</div>
+														<!-- FOOTER -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow26.js"></script>
+		<div id="footer_container">
+			<a href="http://validator.w3.org/check?uri=referer">
+				<img src="images/icons/valid-xhtml11.png"  class="valid" alt="Valid XHTML 1.1"/>
+			</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img src="images/icons/vcss-blue.gif"  class="valid" alt="Valid CSS" />
+			</a>
+		</div>
+		<div class="login_button"><a href="login.html"><span xml:lang="en">Admin login</span></a></div>
+		</body>
+	</html>
 </xsl:template>
 </xsl:stylesheet>
