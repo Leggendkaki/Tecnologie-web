@@ -71,50 +71,26 @@
 												<!-- CONTENT -->
 		<div id="container_portal_list">
 
-			
+
 			<div id="container_guide_list">
 				<xsl:for-each select="//portal">
 				<div class="card card_animation">
 						<span class="card_title"><xsl:value-of select="title"/> </span>
-						<span><img src="&#34;<xsl:value-of select="title"/>" class="card_img" alt="Interfaccia di gioco"/></span>
+						<xsl:variable name="picture">/<xsl:value-of select="img"/></xsl:variable>
+						<img src="../uploads/{$picture}" class="card_img" alt="Interfaccia di gioco"/>
 						<dt class="card_text">Descrizione</dt>
 						<dd class="card_text"><xsl:value-of select="description"/></dd>
+						<dt class="card_text">Latitude</dt>
+						<dd class="card_text"><xsl:value-of select="latitude"/></dd>
+						<dt class="card_text">Longitude</dt>
+						<dd class="card_text"><xsl:value-of select="longitude"/></dd>
+						<dt class="card_text">Nickname</dt>
+						<dd class="card_text"><xsl:value-of select="nickname"/></dd>
 					</div>
 				</xsl:for-each>
 				</div>
 
 
-
-
-			<table>
-				<xsl:for-each select="//portal">
-				<tr>
-				<td>
-					<xsl:value-of select="title"/>
-				</td>
-
-				<td>
-					<xsl:value-of select="description"/>
-				</td>
-
-				<td>
-					<xsl:value-of select="img"/>
-				</td>
-
-				<td>
-					<xsl:value-of select="latitude"/>
-				</td>
-
-				<td>
-					<xsl:value-of select="longitude"/>
-				</td>
-
-				<td>
-					<xsl:value-of select="nickname"/>
-				</td>
-				</tr>
-				</xsl:for-each>
-			</table>
 		</div>
 														<!-- FOOTER -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
