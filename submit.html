@@ -88,7 +88,7 @@
 		<input type="number" name="longitude" placeholder="11.887541" tabindex="6" accesskey="o"></div>
 
 		<div  class="input_form"><label for="picture">Immagine portale</label>
-		<input type="image" name="picture" tabindex="7" accesskey="i"></div>
+		<input type="file" name="picture" tabindex="7" accesskey="i"></div>
 
 		<div class="input_button"><input type="submit" value="Invia" tabindex="8" accesskey="v"></div>
 	</form>
@@ -111,6 +111,15 @@
 	
 	frmvalidator.addValidation("description","req","Inserisci una descrizione");
 	frmvalidator.addValidation("description","maxlen=120","La descrizione può contenere massimo 120 caratteri");
+	
+	frmvalidator.addValidation("latitude","req","Inserisci la latitudine");
+	frmvalidator.addValidation("latitude","maxlen=8","La latitudine non può superare gli 8 caratteri");
+	
+	frmvalidator.addValidation("latitude","req","Inserisci la longitudine");
+	frmvalidator.addValidation("latitude","maxlen=8","La longitudine non può superare gli 8 caratteri");
+	
+	frmvalidator.addValidation("picture","file_extn=jpg;gif;png","i tipi di immagine supportati sono: .jpg .gif .png");
+	frmvalidator.addValidation("picture","req_file","Carica l'immagine del portale");
 	
 	//]]>
 	</script>

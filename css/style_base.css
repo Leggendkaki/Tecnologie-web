@@ -437,7 +437,7 @@ input[type=text], input[type=number], input[type=password]{
 	clear: both;
 }
 
-input[type=image] {
+input[type=file] {
     width: auto;
     padding: 0.750em 1.250em;
     margin: 0.500em;
