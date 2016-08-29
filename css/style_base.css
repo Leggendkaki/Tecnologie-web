@@ -690,16 +690,31 @@ h3 {
 }
 									/*Index*/
 #container_content {
+	width: 80%;
 	text-align: center;
 }
 
+#container_content_center {
+	width: 85%;
+}
+
 .card {
-	margin: 0.313em;
+	
 	width: 45%;
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 0.625em;
 	margin-right: 0.625em;
+}
+
+.card_text {
+	font-size: 80%;
+	line-height: 120%;
+}
+
+.card_button {
+	padding: 1%;
+	font-size: 85%;
 }
 
 									/*Description*/
