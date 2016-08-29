@@ -105,59 +105,54 @@ print <<EOF;
 
 EOF
 
-if ( !$filename )
-{
-print $cgi->header ( );
-print "<div class=\"center\"><h3>ERRORE - Dimensione file troppo grande</h3></div>";
-exit;
-}
-else {
-my ( $name, $path, $extension ) = fileparse ( $filename, '..*' );
-$filename = $name . $extension;
-$filename =~ tr/ /_/;
-$filename =~ s/[^$safe_filename_characters]//g;
-
-my $upload_filehandle = $cgi->upload("photo");
-
-open ( UPLOADFILE, ">$upload_dir/$filename" ) or die "$!";
-binmode UPLOADFILE;
-
-while ( <$upload_filehandle> )
-{
-print UPLOADFILE;
-}
-
-close UPLOADFILE;
-
 
 my $fileDati = "../public_html/xml/portals.xml";
 my $parser = XML::LibXML->new();
-my $doc = $parser-> parse_file($fileDati) || die("Operazione di parsificazione fallita");
-my $root = $doc->getDocumentElement || die("Radice non recuperata");
-
-my $frammento = "	<portal>
-		<date>" . $timestamp . "</date>
-		<img>" . $filename . "</img>
-		<title>" . $title . "</title>
-		<description>" . $description . "</description>
-		<latitude>" . $latitude . "</latitude>
-		<longitude>" . $longitude . "</longitude>
-		<nickname>" . $nickname . "</nickname>
-    <email>" . $email . "</email>
-	</portal>\n";
-
-my $padre = $root;
-$frammento = $parser->parse_balanced_chunk($frammento);
-$padre->appendChild($frammento);
-
-
-open(OUT, ">$fileDati");
-print OUT $doc->toString;
-close(OUT);
-
-print "<div class=\"center\"><h3>Portale aggiunto correttamente</h3></div>";
+my $doc = $parser-> parse_file($fileDati) || die("<div class=\"center\"><h3>Operazione di parsificazione fallita</h3></div>");
+my $coord = $doc->findnodes("//portal[latitude=\'$latitude\'\n and longitude=\'$longitude\'\n]")->get_node(1);
+if(defined $coord) { print "<div class=\"center\"><h3>Cordinate latituine e Longitudine gi&agrave; presenti</h3></div>";
 }
+else {
+	if (!$filename){
+		print $cgi->header ( );
+		print "<div class=\"center\"><h3>ERRORE - Dimensione file troppo grande</h3></div>";}
+	else {
+		my ( $name, $path, $extension ) = fileparse ( $filename, '..*' );
+		$filename = $name . $extension;
+		$filename =~ tr/ /_/;
+		$filename =~ s/[^$safe_filename_characters]//g;
 
+		my $upload_filehandle = $cgi->upload("photo");
+
+		open ( UPLOADFILE, ">$upload_dir/$filename" ) or die "$!";
+		binmode UPLOADFILE;
+
+		while ( <$upload_filehandle> ){print UPLOADFILE;}
+		close UPLOADFILE;
+
+
+		my $frammento = "	<portal>
+			<date>" . $timestamp . "</date>
+			<img>" . $filename . "</img>
+			<title>" . $title . "</title>
+			<description>" . $description . "</description>
+			<latitude>" . $latitude . "</latitude>
+			<longitude>" . $longitude . "</longitude>
+			<nickname>" . $nickname . "</nickname>
+    	<email>" . $email . "</email>
+		</portal>\n";
+
+		my $padre = $root;
+		$frammento = $parser->parse_balanced_chunk($frammento);
+		$padre->appendChild($frammento);
+
+		open(OUT, ">$fileDati");
+		print OUT $doc->toString;
+		close(OUT);
+
+		print "<div class=\"center\"><h3>Portale aggiunto correttamente</h3></div>";
+	}
+}
 print <<EOF;
 	</div>
 											<!-- FOOTER -->
