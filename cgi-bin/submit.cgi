@@ -22,7 +22,7 @@ my $title = $cgi->param('title');
 my $description = $cgi->param('description');
 my $latitude = $cgi->param('latitude');
 my $longitude = $cgi->param('longitude');
-my $filename = $cgi->param("photo");
+my $filename = $cgi->param("picture");
 my $timestamp= strftime '%Y-%m-%d', localtime();
 
 
@@ -32,7 +32,7 @@ print "<html><body>";
 if ( !$filename )
 {
 print $cgi->header ( );
-print "There was a problem uploading your photo (try a smaller file).";
+print "<div class=\"center\"><h3>ERRORE - Dimensione file troppo grande</h3></div>";
 exit;
 }
 
