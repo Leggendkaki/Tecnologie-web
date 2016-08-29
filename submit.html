@@ -30,7 +30,10 @@
 			});
 			});
 		</script>
-		<script language="JavaScript" src="js/gen_validatorv4.js" type="text/javascript" xml:space="preserve"></script>
+		<script src="js/gen_validatorv4.js" type="text/javascript"></script>
+		<script src="js/isnumber.js" type="text/javascript"></script>
+		
+		
 	</head>
 
 	<body>
@@ -74,36 +77,36 @@
 	<form action="cgi-bin/addportal.cgi" id="submitform" name="submitform" method="post">
 		<div  class="input_form"><label for="nickname"><span xml:lang="en">Nickname</span></label>
 		<div id='submitform_nickname_errorloc' class="error"></div>
-		<input type="text" name="nickname" placeholder="Agent007" tabindex="1" accesskey="n"></div>
+		<input type="text" id ="nickname" name="nickname" tabindex="1" accesskey="n"></input></div>
 
 		<div  class="input_form"><label for="email"><span xml:lang="en">E-mail</span></label>
 		<div id='submitform_email_errorloc' class="error"></div>
-		<input type="text" name="email" placeholder="Agent007@gmail.com" tabindex="2" accesskey="e"></div>
+		<input type="text" id ="email" name="email" tabindex="2" accesskey="e"></input></div>
 
-		<div  class="input_form"><label for="name">Nome portale</label>
+		<div  class="input_form"><label for="portalname">Nome portale</label>
 		<div id='submitform_portalname_errorloc' class="error"></div>
-		<input type="text" name="portalname" placeholder="Targa ai caduti" tabindex="3" accesskey="p"></div>
+		<input type="text" id ="portalname" name="portalname" tabindex="3" accesskey="p"></input></div>
 
 		<div  class="input_form"><label for="description">Descrizione</label>
 		<div id='submitform_description_errorloc' class="error"></div>
-		<input type="text" name="description" placeholder="Questo monumento è dedicato ai caduti sul lavoro" tabindex="4" accesskey="d"></div>
+		<input type="text" id ="description" name="description" tabindex="4" accesskey="d"></input></div>
 
 		<div  class="input_form"><label for="latitude">Latitudine</label>
 		<div id='submitform_latitude_errorloc' class="error"></div>
-		<input type="number" name="latitude" placeholder="45.411157" tabindex="5" accesskey="a"></div>
+		<input type="text" onkeypress="return isNumberKey(event)" id ="latitude" name="latitude" tabindex="5" accesskey="a"></input></div>
 
 		<div  class="input_form"><label for="longitude">Longitudine</label>
 		<div id='submitform_longitude_errorloc' class="error"></div>
-		<input type="number" name="longitude" placeholder="11.887541" tabindex="6" accesskey="o"></div>
+		<input type="text" onkeypress="return isNumberKey(event)" id ="longitude" name="longitude" tabindex="6" accesskey="o"></input></div>
 
 		<div  class="input_form"><label for="picture">Immagine portale</label>
 		<div id='submitform_picture_errorloc' class="error"></div>
-		<input type="file" name="picture" tabindex="7" accesskey="i"></div>
+		<input type="file" id ="picture" name="picture" accesskey="i"></input></div>
 
-		<div class="input_button"><input type="submit" value="Invia" tabindex="8" accesskey="v"></div>
+		<div class="input_button"><input type="submit" value="Invia" tabindex="8" accesskey="v"></input></div>
 	</form>
 	
-	<script language="JavaScript" type="text/javascript"xml:space="preserve">
+	<script type="text/javascript" xml:space="preserve">
 	//<![CDATA[
 	var frmvalidator  = new Validator("submitform");
 	

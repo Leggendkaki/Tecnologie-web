@@ -30,7 +30,7 @@
 			});
 			});
 		</script>
-		<script language="JavaScript" src="js/gen_validatorv4.js" type="text/javascript" xml:space="preserve"></script>
+		<script src="js/gen_validatorv4.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -67,21 +67,22 @@
 											<!-- CONTENT -->
 	<div id="container_login">
 	
-	<div class="center"><h2><span cml:lang="en">Login</span> amministratore</h2></div>
+	<div class="center"><h2><span xml:lang="en">Login</span> amministratore</h2></div>
 	
 	<div class="form">
-	<form id="adminlogin" name="adminlogin" method="post">
+	<form id="adminlogin" name="adminlogin" method="post" action="cgi-bin/login.cgi">
 		<div  class="input_form"><label for="username"><span xml:lang="en">Username</span></label>
 		<div id='adminlogin_username_errorloc' class="error"></div>
-		<input type="text" name="username" tabindex="1" accesskey="u"></div>
+		<input type="text" id="username" name="username" tabindex="1" accesskey="u"></input></div>
 
 		<div  class="input_form"><label for="password"><span xml:lang="en">Password</span></label>
 		<div id='adminlogin_password_errorloc' class="error"></div>
-		<input type="password" name="password" tabindex="2" accesskey="p"></div>
+		<input type="password" id="password" name="password" tabindex="2" accesskey="p"></input></div>
 		
-		<div class="input_button"><input type="submit" value="Login" tabindex="8" accesskey="v"></div>
+		<div class="input_button"><input type="submit" value="Login" tabindex="8" accesskey="v"></input></div>
 	</form>
-	<script language="JavaScript" type="text/javascript"xml:space="preserve">
+	
+	<script type="text/javascript" xml:space="preserve">
 	//<![CDATA[
 	var frmvalidator  = new Validator("adminlogin");
 	
