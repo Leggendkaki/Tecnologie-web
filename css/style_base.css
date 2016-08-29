@@ -365,21 +365,34 @@ input[type=text] {
 	padding-top: 1.250em;
 }
 
-.align_left {
-	padding-left: 1.563em;
+.align_justify {
+	padding-left: 0.313em;
 	padding-right: 0.313em;
-	text-align: left;
 	padding-bottom: 0.625em;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.align_point {
+	padding-left: 1.563em;
 }
 
 .interface_bold {
 	font-weight: bold;
+	font-size: 0.813em;
 }
 												/*Intel*/
 .screen_intel {
-	width: 90%;
+	width: 100%;
 	clear:both;
 	padding-top: 0.313em;
+
+}
+
+.p_intel {
+	padding: 0.5em;
+	text-align: justify;
+    text-justify: inter-word;
 }
 												/*Submit*/
 #container_submit {
@@ -664,11 +677,6 @@ h3 {
 .download_button {
 	width: 44%;
 	margin: 0.500em;
-}
-									/*Interface*/
-.p_intel {
-	width: 90%;
-	margin: 0 auto;
 }
 
 .screen {
