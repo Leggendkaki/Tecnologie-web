@@ -88,10 +88,10 @@
 		<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow26.js"></script>
 		<div id="footer_container">
 			<a href="http://validator.w3.org/check?uri=referer">
-				<img src="images/icons/valid-xhtml11.png"  class="valid" alt="Valid XHTML 1.1"/>
+				<img src="../images/icons/valid-xhtml11.png"  class="valid" alt="Valid XHTML 1.1"/>
 			</a>
 			<a href="http://jigsaw.w3.org/css-validator/check/referer">
-				<img src="images/icons/vcss-blue.gif"  class="valid" alt="Valid CSS" />
+				<img src="../images/icons/vcss-blue.gif"  class="valid" alt="Valid CSS" />
 			</a>
 		</div>
 		<div class="login_button"><a href="login.html"><span xml:lang="en">Admin login</span></a></div>
