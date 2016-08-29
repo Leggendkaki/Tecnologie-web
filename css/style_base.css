@@ -84,6 +84,9 @@ ul li {
 .center {
 	text-align: center;
 }
+.italic {
+	font-style: italic;
+}
 
 											/*Material*/
 .primary_text {
@@ -172,6 +175,10 @@ ul li {
 
 .breadcrumb a {
 	color: white;
+}
+.breadcrumb_fix {
+	font-size: 0.875em;
+	line-height: 0.500em;
 }
 								/*Menu*/
 .navbar {
