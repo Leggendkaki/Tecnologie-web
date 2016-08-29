@@ -32,8 +32,8 @@
 		</script>
 		<script src="js/gen_validatorv4.js" type="text/javascript"></script>
 		<script src="js/isnumber.js" type="text/javascript"></script>
-		
-		
+
+
 	</head>
 
 	<body>
@@ -69,12 +69,12 @@
 		</div>
 											<!-- CONTENT -->
 	<div id="container_content">
-	
+
 	<div class="center"><h2>Richiedi un portale</h2></div>
 
 	<div class="form">
-	
-	<form action="cgi-bin/addportal.cgi" id="submitform" name="submitform" method="post">
+
+	<form action="cgi-bin/submit.cgi" id="submitform" name="submitform" method="post">
 		<div  class="input_form"><label for="nickname"><span xml:lang="en">Nickname</span></label>
 		<div id='submitform_nickname_errorloc' class="error"></div>
 		<input type="text" id ="nickname" name="nickname" tabindex="1" accesskey="n"></input></div>
@@ -105,36 +105,36 @@
 
 		<div class="input_button"><input type="submit" value="Invia" tabindex="8" accesskey="v"></input></div>
 	</form>
-	
+
 	<script type="text/javascript" xml:space="preserve">
 	//<![CDATA[
 	var frmvalidator  = new Validator("submitform");
-	
+
     frmvalidator.EnableMsgsTogether();
 	frmvalidator.EnableOnPageErrorDisplay();
-	
+
 	frmvalidator.addValidation("nickname","req","Inserisci il tuo nickname");
 	frmvalidator.addValidation("nickname","maxlen=20",	"Il nickname può essere di massimo 20 caratteri");
-	
+
 	frmvalidator.addValidation("email","maxlen=50","L'Email può essere di massimo 50 caratteri");
 	frmvalidator.addValidation("email","req","Inserisci la tua email");
 	frmvalidator.addValidation("email","email","Inserisci una email valida");
-	
+
 	frmvalidator.addValidation("portalname","req","Inserisci il nome del portale");
 	frmvalidator.addValidation("portalname","maxlen=30","Il nome del portale può essere di massimo 30 caratteri");
-	
+
 	frmvalidator.addValidation("description","req","Inserisci una descrizione");
 	frmvalidator.addValidation("description","maxlen=120","La descrizione può contenere massimo 120 caratteri");
-	
+
 	frmvalidator.addValidation("latitude","req","Inserisci la latitudine");
 	frmvalidator.addValidation("latitude","maxlen=8","La latitudine non può superare gli 8 caratteri");
-	
+
 	frmvalidator.addValidation("longitude","req","Inserisci la longitudine");
 	frmvalidator.addValidation("longitude","maxlen=8","La longitudine non può superare gli 8 caratteri");
-	
+
 	frmvalidator.addValidation("picture","file_extn=jpg;gif;png","i tipi di immagine supportati sono: .jpg .gif .png");
 	frmvalidator.addValidation("picture","req_file","Carica l'immagine del portale");
-	
+
 	//]]>
 	</script>
 
