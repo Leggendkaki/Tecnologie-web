@@ -248,7 +248,7 @@ ul li {
 	margin-top: 0.938em;
 	margin-bottom: 0.938em;
 	width: 100%;
-	padding: 0px;
+	padding: 0;
 	overflow: hidden;
 	box-shadow: 0 0.063em 0.188em rgba(0,0,0,0.12), 0 0.063em 0.125em rgba(0,0,0,0.24);
 	transition: all 0.2s ease-in-out;
@@ -294,6 +294,7 @@ a.card_title {
 .card_text {
 	font-size: 1em;
 	text-align: justify;
+	text-justify: inter-word;
 	padding: 2%;
 }
 
@@ -319,6 +320,7 @@ a.card_title {
 	padding-right: 0.313em;
 	padding-bottom: 1.250em;
 	text-align: justify;
+	text-justify: inter-word;
 	padding-top: 0.625em;
 }
 
@@ -363,6 +365,7 @@ input[type=text] {
 
 .list_interface {
 	padding-top: 1.250em;
+	overflow: hidden;
 }
 
 .align_justify {
@@ -375,6 +378,7 @@ input[type=text] {
 
 .align_point {
 	padding-left: 1.563em;
+	overflow: hidden;
 }
 
 .interface_bold {
@@ -499,6 +503,7 @@ input[type=submit] {
 .portal_text {
 	font-size: 1em;
 	text-align: justify;
+	text-justify: inter-word;
 	padding: 2%;
 	clear: right;
 }
@@ -642,6 +647,11 @@ h3 {
 	width: 35%;
 }
 
+.description_text {
+	padding-bottom: 1.5em;
+	padding-top: 0.625em;
+}
+
 												/*Interface*/
 .p_interface {
 	padding: 0.313em;
@@ -699,7 +709,6 @@ h3 {
 }
 
 .card {
-	
 	width: 45%;
 	display: inline-block;
 	vertical-align: middle;
@@ -728,6 +737,7 @@ h3 {
 	padding-right: 0.313em;
 	padding-bottom: 1.250em;
 	text-align: justify;
+	text-justify: inter-word;
 	padding-top: 0.625em;
 }
 
@@ -752,4 +762,7 @@ h3 {
 	width: 20%;
 }
 
+.portal_img {
+	height: 20%;
+}
 }
