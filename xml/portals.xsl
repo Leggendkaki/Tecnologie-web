@@ -74,7 +74,7 @@
 					<div class="card card_animation">
 					<p class="portal_title"><xsl:value-of select="title"/></p>
 					<xsl:variable name="picture">/<xsl:value-of select="img"/></xsl:variable>
-					<img src="../uploads/{$picture}" class="portal_img" alt="Immagine portale"/>
+					<img src="images/uploads/{$picture}" class="portal_img" alt="Immagine portale"/>
 					<p class="portal_text primary_text"><xsl:value-of select="description"/></p>
 					<hr></hr>
 					<p class="richiedente">Richiedente</p>				<p class="nick"><xsl:value-of select="nickname"/></p>
