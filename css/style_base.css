@@ -88,6 +88,34 @@ ul li {
 	font-style: italic;
 }
 
+table {
+	
+	font-family: 'Coda', sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 2em;
+}
+
+th {
+	background-color: #009688;
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 0.5em;
+	color: white;
+}
+
+td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 0.2em;
+	font-size: 1em;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 											/*Material*/
 .primary_text {
 	color: #000000;
