@@ -1,0 +1,7 @@
+<!ELEMENT portal_list (portal)+>
+<!ELEMENT portal (title,img,description,latitude,longitude,email)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT img (#PCDATA)>
+<!ELEMENT latitude (#PCDATA)>
+<!ELEMENT longitude (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
