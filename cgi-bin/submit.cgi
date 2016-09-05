@@ -1,4 +1,4 @@
-#!C:\Perl64\bin\perl.exe
+#!/usr/bin/perl
 use strict;
 use warnings;
 use XML::LibXML;
@@ -12,7 +12,7 @@ use File::Basename;
 $CGI::POST_MAX = 5000 * 5000;
 
 my $safe_filename_characters = "a-zA-Z0-9_.-";
-my $upload_dir = "../www/uploads";
+my $upload_dir = "../public_html/images/uploads";
 
 my $cgi = new CGI;
 
@@ -130,7 +130,7 @@ print UPLOADFILE;
 close UPLOADFILE;
 
 
-my $fileDati = "../www/xml/portals.xml";
+my $fileDati = "../public_html/xml/portals.xml";
 my $parser = XML::LibXML->new();
 my $doc = $parser-> parse_file($fileDati) || die("Operazione di parsificazione fallita");
 my $root = $doc->getDocumentElement || die("Radice non recuperata");
