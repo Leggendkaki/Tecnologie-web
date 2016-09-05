@@ -1,4 +1,4 @@
-#!C:\Perl64\bin\perl.exe
+#!/usr/bin/perl
 use warnings;
 use XML::LibXML;
 use HTML::Entities;
@@ -11,7 +11,7 @@ my $cgi = new CGI;
 my $username = $cgi->param("username");
 my $pwd = $cgi->param("password");
 
-my $file = "../www/xml/login.xml";
+my $file = "../public_html/xml/login.xml";
 my $parser = XML::LibXML->new();
 
 my $doc = $parser-> parse_file($file) || die("Operazione di parsificazione fallita");
@@ -126,7 +126,7 @@ if($login==1) {
 EOF
 
 
-my $fileDati = "../www/xml/portals.xml";
+my $fileDati = "../public_html/xml/portals.xml";
 $doc = $parser-> parse_file($fileDati) || die("Operazione di parsificazione fallita");
 my $root = $doc->getDocumentElement || die("Radice non recuperata");
 
