@@ -1,29 +1,29 @@
-#!/usr/bin/perl -w
-use strict;
+#!C:\Perl64\bin\perl.exe
 use warnings;
 use XML::LibXML;
 use HTML::Entities;
-use POSIX qw(strftime);
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
-use File::Basename;
 
-
-$CGI::POST_MAX = 5000 * 5000;
-
-my $safe_filename_characters = "a-zA-Z0-9_.-";
-my $upload_dir = "../public_html/images/uploads";
 
 my $cgi = new CGI;
 
-my $nickname = $cgi->param('nickname');
-my $email = $cgi->param('email');
-my $title = $cgi->param('title');
-my $description = $cgi->param('description');
-my $latitude = $cgi->param('latitude');
-my $longitude = $cgi->param('longitude');
-my $filename = $cgi->param("picture");
-my $timestamp= strftime '%Y-%m-%d', localtime();
+my $username = $cgi->param("username");
+my $pwd = $cgi->param("password");
+
+my $file = "../www/xml/login.xml";
+my $parser = XML::LibXML->new();
+
+my $doc = $parser-> parse_file($file) || die("Operazione di parsificazione fallita");
+
+my $login=0;
+foreach $j ($doc->findnodes('/administrator/id')) {
+	my $user = $j->findnodes('./user');
+	my $password = $j->findnodes('./password');
+	if($user eq $username && $password eq $pwd) {
+		$login=1;
+	}
+}
 
 
 print $cgi->header;
@@ -102,60 +102,50 @@ print <<EOF;
 		</div>
 											<!-- CONTENT -->
 	<div id="container_submit">
-
+	<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
 EOF
 
-if ( !$filename )
-{
-print $cgi->header ( );
-print "<div class=\"center\"><h3>ERRORE - Dimensione file troppo grande</h3></div>";
-exit;
-}
-else {
-my ( $name, $path, $extension ) = fileparse ( $filename, '..*' );
-$filename = $name . $extension;
-$filename =~ tr/ /_/;
-$filename =~ s/[^$safe_filename_characters]//g;
+if($login==1) {
+	print <<EOF;
+	<h2> Rimuovi portale</h2>
 
-my $upload_filehandle = $cgi->upload("photo");
+	<div class="form">
+	<form method="post" action="login.cgi" method="post">
+		<label for="latitude">Latitudine</label>
+		<input type="number" id="latitude" name="latitude" placeholder="45.411157" tabindex="5" accesskey="a">
 
-open ( UPLOADFILE, ">$upload_dir/$filename" ) or die "$!";
-binmode UPLOADFILE;
-
-while ( <$upload_filehandle> )
-{
-print UPLOADFILE;
-}
-
-close UPLOADFILE;
+		<label for="longitude">Longitudine</label>
+		<input type="number" id="longitude" name="longitude" placeholder="11.887541" tabindex="6" accesskey="o">
+		<div class="input_button"><input type="submit" value="Invia" tabindex="8" accesskey="v"></div>
+	</form>
+	</div>
+EOF
 
 
-my $fileDati = "../public_html/xml/portals.xml";
-my $parser = XML::LibXML->new();
-my $doc = $parser-> parse_file($fileDati) || die("Operazione di parsificazione fallita");
+my $fileDati = "../www/xml/portals.xml";
+$doc = $parser-> parse_file($fileDati) || die("Operazione di parsificazione fallita");
 my $root = $doc->getDocumentElement || die("Radice non recuperata");
 
-my $frammento = "	<portal>
-		<date>" . $timestamp . "</date>
-		<img>" . $filename . "</img>
-		<title>" . $title . "</title>
-		<description>" . $description . "</description>
-		<latitude>" . $latitude . "</latitude>
-		<longitude>" . $longitude . "</longitude>
-		<nickname>" . $nickname . "</nickname>
-    <email>" . $email . "</email>
-	</portal>\n";
-
-my $padre = $root;
-$frammento = $parser->parse_balanced_chunk($frammento);
-$padre->appendChild($frammento);
-
-
-open(OUT, ">$fileDati");
-print OUT $doc->toString;
-close(OUT);
-
-print "<div class=\"center\"><h3>Portale aggiunto correttamente</h3></div>";
+print "<table>";
+print "<tr><th>Nome portale</th><th>Latitudine</th><th>Longitudine</th><tr>";
+foreach $a ($doc->findnodes('portal_list/portal')) {
+	print "<tr>";
+	my $title = $a->findnodes('./title');
+	print "<td>". $title ."</td>";
+	my $latitude = $a->findnodes('./latitude');
+	print "<td>". $latitude ."</td>";
+	my $longitude = $a->findnodes('./longitude');
+	print "<td>". $longitude ."</td>";
+	print "</tr>";
+}
+print "</table>";
+}
+else {
+	print "<h1>Nome utente o password errati</h1>"
 }
 
 print <<EOF;
@@ -175,3 +165,18 @@ print <<EOF;
 	</body>
 </html>
 EOF
+
+
+if($login==1) {
+print $cgi->end_html;
+
+my $lat = $cgi->param("latitude");
+my $lon = $cgi->param("longitude");
+
+my $portal = $doc->findnodes("//portal[latitude=\'$lat\'\n and longitude=\'$lon\'\n]")->get_node(1);
+if(defined $portal) {$portal = $portal->parentNode->removeChild($portal);}
+
+open(OUT, ">$fileDati");
+print OUT $doc->toString;
+close(OUT);
+}
