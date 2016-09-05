@@ -86,8 +86,8 @@
 				</xsl:for-each>
 		</div>
 														<!-- FOOTER -->
-		<script type="text/javascript" src="../js/jquery-2.1.3.min">&gt</script>
-		<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow26.js">&gt</script>
+		<script type="text/javascript" src="../js/jquery-2.1.3.min"></script>
+		<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow26.js"></script>
 		<div id="footer_container">
 			<a href="http://validator.w3.org/check?uri=referer">
 				<img src="../images/icons/valid-xhtml11.png"  class="valid" alt="Valid XHTML 1.1"/>
