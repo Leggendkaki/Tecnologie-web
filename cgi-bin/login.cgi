@@ -97,7 +97,7 @@ print <<EOF;
 				<li><a href="../description.html">Il gioco</a></li>
 				<li><a href="../guide_list.html">Guide</a></li>
 				<li><a href="../xml/portals.xml">Portali</a></li>
-				<li class="../submit.html">Submit</li>
+				<li><a href="../submit.html"><span xml:lang="en">Submit</span></a></li>
 			</ul>
 		</div>
 EOF
