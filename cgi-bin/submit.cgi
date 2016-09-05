@@ -46,6 +46,9 @@ print <<EOF;
 		<meta name="MobileOptimized" content="320"/>		<!--ottimizzazione mobile-->
 		<meta http-equiv="cleartype" content="on"/>
 
+															<!--Fix IE LABORATORIO-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
 		<link href='https://fonts.googleapis.com/css?family=Coda:400,800' rel='stylesheet' type='text/css' />
 
 		<!-- Link foglio di stile-->
