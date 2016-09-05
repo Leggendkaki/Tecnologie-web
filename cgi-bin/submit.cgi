@@ -171,7 +171,7 @@ print <<EOF;
 			<img src="../images/icons/vcss-blue.gif"  class="valid" alt="Valid CSS" />
 		</a>
 	</div>
-	<div class="login_button"><a href="login.html"><span xml:lang="en">Admin login</span></a></div>
+	<div class="login_button"><a href="../login.html"><span xml:lang="en">Admin login</span></a></div>
 	</body>
 </html>
 EOF
