@@ -116,10 +116,10 @@ if($login==1) {
 	<div class="form">
 	<form method="post" action="login.cgi" method="post">
 		<label for="latitude">Latitudine</label>
-		<input type="number" id="latitude" name="latitude" placeholder="45.411157" tabindex="5" accesskey="a">
+		<input type="text" id="latitude" name="latitude" tabindex="5" accesskey="a">
 
 		<label for="longitude">Longitudine</label>
-		<input type="number" id="longitude" name="longitude" placeholder="11.887541" tabindex="6" accesskey="o">
+		<input type="text" id="longitude" name="longitude" tabindex="6" accesskey="o">
 		<div class="input_button"><input type="submit" value="Invia" tabindex="8" accesskey="v"></div>
 	</form>
 	</div>
