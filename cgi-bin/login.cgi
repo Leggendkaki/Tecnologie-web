@@ -16,6 +16,7 @@ my $parser = XML::LibXML->new();
 
 my $doc = $parser-> parse_file($file) || die("Operazione di parsificazione fallita");
 
+
 my $login=0;
 foreach $j ($doc->findnodes('/administrator/id')) {
 	my $user = $j->findnodes('./user');
@@ -24,7 +25,6 @@ foreach $j ($doc->findnodes('/administrator/id')) {
 		$login=1;
 	}
 }
-
 
 print $cgi->header;
 print $cgi->start_html('Area Amministratore');
@@ -52,11 +52,11 @@ print <<EOF;
 		<link href='https://fonts.googleapis.com/css?family=Coda:400,800' rel='stylesheet' type='text/css' />
 
 		<!-- Link foglio di stile-->
-		<link href="../css/style_base.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="../public_html/css/style_base.css" rel="stylesheet" type="text/css" media="screen"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>	<!-- Website responsive -->
 
 
-		<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../public_html/js/jquery-1.7.1.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 
@@ -72,8 +72,8 @@ print <<EOF;
 	<body>
 											<!-- HEADER -->
 		<div id="header_container">
-			<img src="images/icons/button_mobile.png" class="navbar_button" alt="mobile menu"/>
-			<img src="images/logo_UP_noback.png" alt="Level UP" class="banner"/>
+			<img src="../public_html/images/icons/button_mobile.png" class="navbar_button" alt="mobile menu"/>
+			<img src="../public_html/images/logo_UP_noback.png" alt="Level UP" class="banner"/>
 			<div class="titles">
 				<h1 class="maintext">Ingress Level UP</h1>
 				<p class="maintext">"The world around you is not what it seems"</p>
@@ -82,7 +82,7 @@ print <<EOF;
 			<div class="breadcrumb">
 				<ol>
 					<li>Ti trovi in:</li>
-					<li><a href="../index.html">Home</a></li>
+					<li><a href="../public_html/index.html">Home</a></li>
 					<li>/</li>
 					<li>Area Amministratore</li>
 				</ol>
@@ -93,25 +93,20 @@ print <<EOF;
 
 		<div class="navbar" id="menu">
 			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../description.html">Il gioco</a></li>
-				<li><a href="../guide_list.html">Guide</a></li>
-				<li><a href="../xml/portals.xml">Portali</a></li>
-				<li class="../submit.html">Submit</li>
+				<li><a href="../public_html/index.html">Home</a></li>
+				<li><a href="../public_html/description.html">Il gioco</a></li>
+				<li><a href="../public_html/guide_list.html">Guide</a></li>
+				<li><a href="../public_html/xml/portals.xml">Portali</a></li>
+				<li class="../public_html/submit.html">Submit</li>
 			</ul>
 		</div>
-											<!-- CONTENT -->
-	<div id="container_submit">
-	<style>
-table, th, td {
-    border: 1px solid black;
-}
-</style>
 EOF
-
 if($login==1) {
-	print <<EOF;
-	<h2> Rimuovi portale</h2>
+print <<EOF;
+		<!-- CONTENT -->
+
+
+	<div class="center"><h2>Rimuovi portale</h2></div>
 
 	<div class="form">
 	<form method="post" action="login.cgi" method="post">
@@ -126,9 +121,21 @@ if($login==1) {
 EOF
 
 
+my $lat = $cgi->param("latitude");
+my $lon = $cgi->param("longitude");
+
 my $fileDati = "../public_html/xml/portals.xml";
 $doc = $parser-> parse_file($fileDati) || die("Operazione di parsificazione fallita");
-my $root = $doc->getDocumentElement || die("Radice non recuperata");
+
+my $portal = $doc->findnodes("//portal[latitude=\'$lat\'\n and longitude=\'$lon\'\n]")->get_node(1);
+if(defined $portal) {$portal = $portal->parentNode->removeChild($portal);}
+
+
+open(OUT, ">$fileDati");
+print OUT $doc->toString;
+close(OUT);
+
+
 
 print "<table>";
 print "<tr><th>Nome portale</th><th>Latitudine</th><th>Longitudine</th><tr>";
@@ -145,7 +152,7 @@ foreach $a ($doc->findnodes('portal_list/portal')) {
 print "</table>";
 }
 else {
-	print "<h1>Nome utente o password errati</h1>"
+  print "<div class=\"center\"><h2>Utente o password errati</h2></div>"
 }
 
 print <<EOF;
@@ -155,10 +162,10 @@ print <<EOF;
 	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow26.js"></script>
 	<div id="footer_container">
 		<a href="http://validator.w3.org/check?uri=referer">
-			<img src="../images/icons/valid-xhtml11.png"  class="valid" alt="Valid XHTML 1.1"/>
+			<img src="../public_html/images/icons/valid-xhtml11.png"  class="valid" alt="Valid XHTML 1.1"/>
 		</a>
 		<a href="http://jigsaw.w3.org/css-validator/check/referer">
-			<img src="../images/icons/vcss-blue.gif"  class="valid" alt="Valid CSS" />
+			<img src="../public_html/images/icons/vcss-blue.gif"  class="valid" alt="Valid CSS" />
 		</a>
 	</div>
 	<div class="login_button"><a href="login.html"><span xml:lang="en">Admin login</span></a></div>
@@ -166,17 +173,8 @@ print <<EOF;
 </html>
 EOF
 
-
-if($login==1) {
 print $cgi->end_html;
 
-my $lat = $cgi->param("latitude");
-my $lon = $cgi->param("longitude");
 
-my $portal = $doc->findnodes("//portal[latitude=\'$lat\'\n and longitude=\'$lon\'\n]")->get_node(1);
-if(defined $portal) {$portal = $portal->parentNode->removeChild($portal);}
 
-open(OUT, ">$fileDati");
-print OUT $doc->toString;
-close(OUT);
-}
+
