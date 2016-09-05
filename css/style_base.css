@@ -131,7 +131,7 @@ tr:nth-child(even) {
 	margin: 0 auto;
 	width:100%;
 	height: 13.750em;
-	background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover.jpg") no-repeat center center scroll;
+	background: url("../images/cover.jpg") no-repeat center center scroll;
 	background-size: cover;
 	text-align: center;
 	position: relative;
