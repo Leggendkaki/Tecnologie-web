@@ -52,7 +52,7 @@
 				<div class="breadcrumb">
 					<ol>
 						<li>Ti trovi in:</li>
-						<li><a href="index.html"><span xml:lang="en">Home</span></a></li>
+						<li><a href="../index.html"><span xml:lang="en">Home</span></a></li>
 						<li>/</li>
 						<li>Portali</li>
 					</ol>
