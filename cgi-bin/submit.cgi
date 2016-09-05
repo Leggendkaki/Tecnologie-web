@@ -18,7 +18,7 @@ my $cgi = new CGI;
 
 my $nickname = $cgi->param('nickname');
 my $email = $cgi->param('email');
-my $title = $cgi->param('title');
+my $title = $cgi->param('portalname');
 my $description = $cgi->param('description');
 my $latitude = $cgi->param('latitude');
 my $longitude = $cgi->param('longitude');
